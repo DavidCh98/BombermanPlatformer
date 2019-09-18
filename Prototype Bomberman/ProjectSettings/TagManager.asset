@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - HeartP1
+  - ScoreP2
+  - HeartP2
+  - Undefined
+  - banana
   layers:
   - Default
   - TransparentFX

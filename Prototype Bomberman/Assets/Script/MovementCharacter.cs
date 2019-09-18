@@ -18,12 +18,22 @@ public class MovementCharacter : MonoBehaviour
     public KeyCode down;
     public KeyCode left;
     public KeyCode right;
+    public KeyCode shoot;
+    public KeyCode dropWeapon;
+    public KeyCode firstWeapon;
+    public KeyCode secondWeapon;
+    public GameObject[] weapons;
+    public int weaponsInInventory;
+    public int currentlySelectedWeapon;
+    public GameObject bullet;
 #endregion 
 
-#region Start function
     // Start is called before the first frame update
     void Start()
     {
+        weaponsInInventory = 0;
+        currentlySelectedWeapon = 0;
+
         speed = 5;
         if (this.name == "CharacterA")
         {
@@ -32,6 +42,11 @@ public class MovementCharacter : MonoBehaviour
             down = KeyCode.S;
             left = KeyCode.A;
             right = KeyCode.D;
+            dropWeapon = KeyCode.Q;
+            shoot = KeyCode.LeftShift;
+            firstWeapon = KeyCode.Alpha1;
+            secondWeapon = KeyCode.Alpha2;
+
         } 
         else if (this.name == "CharacterB")
         {
@@ -40,15 +55,17 @@ public class MovementCharacter : MonoBehaviour
             down = KeyCode.DownArrow;
             left = KeyCode.LeftArrow;
             right = KeyCode.RightArrow;
+            dropWeapon = KeyCode.LeftControl;
+            shoot = KeyCode.RightShift;
+            firstWeapon = KeyCode.Keypad1;
+            secondWeapon = KeyCode.Keypad2;
         }
         sR= GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         rigbod = this.GetComponent<Rigidbody2D>();
     }
-#endregion
 
-#region Update function
-        // Update is called once per frame
+    // Update is called once per frame
     void Update()
     {
         // Vector2 movement = Vector2.zero;
@@ -82,23 +99,47 @@ public class MovementCharacter : MonoBehaviour
             animator.SetBool("CharacterAnimation",false);
             rigbod.velocity= new Vector2(0, rigbod.velocity.y);
         }
-        // character.Translate(movement);
-    }
-#endregion
+        if(Input.GetKeyDown(dropWeapon) == true)
+        {
+            weapons[currentlySelectedWeapon] = null;
+            weaponsInInventory--;
+        }
+        if (Input.GetKeyDown(shoot) == true)
+        {
+            Transform shotPointTransform = this.GetComponentInChildren<Transform>();
+            Vector3 shotPoint = new Vector3(shotPointTransform.position.x, shotPointTransform.position.y, shotPointTransform.position.z);
+            Instantiate(bullet, shotPoint, Quaternion.identity);
+            
+        }
+        if (Input.GetKeyDown(firstWeapon))
+        {
+            currentlySelectedWeapon = 0;
+        } else if (Input.GetKeyDown(secondWeapon))
+        {
+            currentlySelectedWeapon = 1;
+        }
 
-#region Collision
-            void OnCollisionEnter2D(Collision2D col) {
+    }
+
+
+
+    void OnCollisionEnter2D(Collision2D col) {
         if(col.gameObject.name == "TilemapGround")
         {
             firstJump = false;
             secondJump = false;
             Debug.Log("I hit the ground");
         }
+        if (col.gameObject.tag == "banana")
+        {
+            col.transform.localScale = new Vector3(0.2f,0.2f,0.2f);
+            // col.gameObject.GetComponent<SpriteRenderer>().flipY = true;
+            Debug.Log("Collided with " + col.gameObject.name);
+            weapons[weaponsInInventory]= col.gameObject;
+            weaponsInInventory ++;
+        }
     }
-#endregion
 
-
-    
 }
 
  
