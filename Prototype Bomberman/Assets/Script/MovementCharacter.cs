@@ -55,7 +55,7 @@ public class MovementCharacter : MonoBehaviour
             down = KeyCode.DownArrow;
             left = KeyCode.LeftArrow;
             right = KeyCode.RightArrow;
-            dropWeapon = KeyCode.LeftControl;
+            dropWeapon = KeyCode.RightControl;
             shoot = KeyCode.RightShift;
             firstWeapon = KeyCode.Keypad1;
             secondWeapon = KeyCode.Keypad2;
