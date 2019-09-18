@@ -46,5 +46,14 @@ public class Bullet : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        private void OnCollisionEnter2D(Collision2D other) 
+        {
+            LifeController lives = other.gameObject.GetComponent<LifeController>();
+            ScoreController score = other.gameObject.GetComponent<ScoreController>();
+            lives.lives--;
+            score.score = score.score+10;
+            Destroy(this.gameObject);  
+        }
 }
 

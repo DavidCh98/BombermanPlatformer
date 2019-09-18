@@ -8,11 +8,23 @@ public class LifeController : MonoBehaviour
     
     [SerializeField] 
     private GameObject[] hearts;
+    private GameObject player;
 
 
     // Start is called before the first frame update
     void Start()
     {
+        if (this.name == "CharacterA")
+        {
+            player = GameObject.Find("CharacterA");
+           
+
+        } 
+        else if (this.name == "CharacterB")
+        {
+            player = GameObject.Find("CharacterB");
+            
+        }
         lives = 3;
         if (this.name == "CharacterA")
         {
@@ -36,6 +48,7 @@ public class LifeController : MonoBehaviour
                 break;
             case 0:
                 hearts[hearts.Length-3].gameObject.SetActive(false);
+                Destroy(player);
                 break;
         }
     }

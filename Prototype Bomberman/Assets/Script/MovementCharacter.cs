@@ -107,8 +107,18 @@ public class MovementCharacter : MonoBehaviour
         if (Input.GetKeyDown(shoot) == true)
         {
             Transform shotPointTransform = this.GetComponentInChildren<Transform>();
-            Vector3 shotPoint = new Vector3(shotPointTransform.position.x, shotPointTransform.position.y, shotPointTransform.position.z);
-            Instantiate(bullet, shotPoint, Quaternion.identity);
+            
+            if(sR.flipX == true)
+            {
+                Vector3 shotPoint = new Vector3(shotPointTransform.position.x-0.5f, shotPointTransform.position.y, shotPointTransform.position.z);
+                Instantiate(bullet, shotPoint, Quaternion.identity);
+
+            } else if(sR.flipX == false)
+            {
+                Vector3 shotPoint = new Vector3(shotPointTransform.position.x+0.5f, shotPointTransform.position.y, shotPointTransform.position.z); 
+                Instantiate(bullet, shotPoint, Quaternion.identity);  
+            }
+            
             
         }
         if (Input.GetKeyDown(firstWeapon))
