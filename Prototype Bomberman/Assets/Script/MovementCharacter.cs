@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class MovementCharacter : MonoBehaviour
 {
-
 #region Var decleration
     Transform character;
     public float speed;
@@ -26,7 +25,7 @@ public class MovementCharacter : MonoBehaviour
     public int weaponsInInventory;
     public int currentlySelectedWeapon;
     public GameObject bullet;
-#endregion 
+    #endregion 
 
     // Start is called before the first frame update
     void Start()
@@ -107,18 +106,19 @@ public class MovementCharacter : MonoBehaviour
         if (Input.GetKeyDown(shoot) == true)
         {
             Transform shotPointTransform = this.GetComponentInChildren<Transform>();
-            
+            //changes position of bullet spawning point
             if(sR.flipX == true)
             {
                 Vector3 shotPoint = new Vector3(shotPointTransform.position.x-0.5f, shotPointTransform.position.y, shotPointTransform.position.z);
-                Instantiate(bullet, shotPoint, Quaternion.identity);
-
-            } else if(sR.flipX == false)
+                 GameObject go = Instantiate(bullet, shotPoint, Quaternion.Euler(0, 180, 0));
+                go.GetComponent<Rigidbody2D>().velocity = new Vector2 (-1,0);
+            } 
+            else if(sR.flipX == false)
             {
                 Vector3 shotPoint = new Vector3(shotPointTransform.position.x+0.5f, shotPointTransform.position.y, shotPointTransform.position.z); 
-                Instantiate(bullet, shotPoint, Quaternion.identity);  
+                GameObject go = Instantiate(bullet, shotPoint, Quaternion.identity); 
+                go.GetComponent<Rigidbody2D>().velocity = new Vector2 (1,0); 
             }
-            
             
         }
         if (Input.GetKeyDown(firstWeapon))
@@ -131,8 +131,6 @@ public class MovementCharacter : MonoBehaviour
 
     }
 
-
-
     void OnCollisionEnter2D(Collision2D col) {
         if(col.gameObject.name == "TilemapGround")
         {
@@ -143,7 +141,7 @@ public class MovementCharacter : MonoBehaviour
         if (col.gameObject.tag == "banana")
         {
             col.transform.localScale = new Vector3(0.2f,0.2f,0.2f);
-            // col.gameObject.GetComponent<SpriteRenderer>().flipY = true;
+            col.gameObject.GetComponent<SpriteRenderer>().flipY = true;
             Debug.Log("Collided with " + col.gameObject.name);
             weapons[weaponsInInventory]= col.gameObject;
             weaponsInInventory ++;
