@@ -7,6 +7,8 @@ public class MovementCharacter : MonoBehaviour
 #region Var decleration
     Transform character;
     public float speed;
+    public float targetTime;
+    private float restartTargetTime = 5.0f;
     public float bulletSpeed;
     public float jumpForce = 5f;
     Animator animator;
@@ -26,6 +28,7 @@ public class MovementCharacter : MonoBehaviour
     public int weaponsInInventory;
     public int currentlySelectedWeapon;
     public GameObject bullet;
+    public GameObject slime;
     #endregion 
 
     // Start is called before the first frame update
@@ -33,6 +36,7 @@ public class MovementCharacter : MonoBehaviour
     {
         weaponsInInventory = 0;
         currentlySelectedWeapon = 0;
+        slime =  GameObject.FindWithTag("slime");
 
         speed = 5;
         if (this.name == "CharacterA")
@@ -60,7 +64,7 @@ public class MovementCharacter : MonoBehaviour
             firstWeapon = KeyCode.Keypad1;
             secondWeapon = KeyCode.Keypad2;
         }
-        sR= GetComponent<SpriteRenderer>();
+        sR = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         rigbod = this.GetComponent<Rigidbody2D>();
     }
@@ -129,7 +133,15 @@ public class MovementCharacter : MonoBehaviour
         {
             currentlySelectedWeapon = 1;
         }
-
+        //timer for power ups
+        if (speed == 1 || speed == 7){
+            targetTime -= Time.deltaTime;
+            if (targetTime <= 0)
+            {
+                speed = 5;
+                targetTime = restartTargetTime;
+            }
+        }        
     }
 
     void OnCollisionEnter2D(Collision2D col) {
@@ -147,8 +159,16 @@ public class MovementCharacter : MonoBehaviour
             weapons[weaponsInInventory]= col.gameObject;
             weaponsInInventory ++;
         }
-    }
-
+        if (col.gameObject.tag == "slime"){
+            Destroy(col.gameObject);
+            speed = 1;
+        }
+        if (col.gameObject.tag == "up"){
+            Destroy(col.gameObject);
+            speed = 7;
+        }
+        
+    }  
 }
 
  

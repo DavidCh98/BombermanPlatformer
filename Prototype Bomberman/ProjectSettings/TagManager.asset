@@ -9,6 +9,8 @@ TagManager:
   - HeartP2
   - Undefined
   - banana
+  - slime
+  - up
   layers:
   - Default
   - TransparentFX

@@ -22,8 +22,8 @@ public class Bullet : MonoBehaviour
             timerEnded();
         }
     }
-     private void OnTriggerEnter2D(Collider2D other) {
-         Destroy(gameObject);
+    private void OnTriggerEnter2D(Collider2D other) {
+        Destroy(gameObject);
         LifeController lives = other.gameObject.GetComponent<LifeController>();
         ScoreController score = other.gameObject.GetComponent<ScoreController>();
         lives.lives--;
