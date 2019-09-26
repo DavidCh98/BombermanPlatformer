@@ -95,11 +95,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b399e0932d607934e9cf6640c3772099, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 10
   distance: 0
   whatIsSolid:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 0
   bullet: {fileID: 1848328609203056122}
   targetTime: 6
 --- !u!61 &-3194204594686899785

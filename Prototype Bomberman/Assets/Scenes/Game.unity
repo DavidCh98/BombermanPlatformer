@@ -454,6 +454,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  bulletSpeed: 10
   jumpForce: 5
   firstJump: 0
   secondJump: 0
@@ -3141,6 +3142,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.1
+  bulletSpeed: 10
   jumpForce: 5
   firstJump: 0
   secondJump: 0

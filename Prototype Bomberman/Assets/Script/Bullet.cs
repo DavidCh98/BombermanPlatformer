@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    public float speed;
-    public float distance;
-    public LayerMask whatIsSolid;
     public GameObject bullet;
     public float targetTime = 60.0f;
     // Start is called before the first frame update
@@ -27,19 +24,14 @@ public class Bullet : MonoBehaviour
     }
      private void OnTriggerEnter2D(Collider2D other) {
          Destroy(gameObject);
-     }
+        LifeController lives = other.gameObject.GetComponent<LifeController>();
+        ScoreController score = other.gameObject.GetComponent<ScoreController>();
+        lives.lives--;
+        score.score = score.score+10;
+    }
     void timerEnded()
     {
         Destroy(gameObject);
     }
-
-        private void OnCollisionEnter2D(Collision2D other) 
-        {
-            LifeController lives = other.gameObject.GetComponent<LifeController>();
-            ScoreController score = other.gameObject.GetComponent<ScoreController>();
-            lives.lives--;
-            score.score = score.score+10;
-            Destroy(this.gameObject);  
-        }
 }
 

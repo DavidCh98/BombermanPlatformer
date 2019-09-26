@@ -7,6 +7,7 @@ public class MovementCharacter : MonoBehaviour
 #region Var decleration
     Transform character;
     public float speed;
+    public float bulletSpeed;
     public float jumpForce = 5f;
     Animator animator;
     public bool firstJump;
@@ -111,13 +112,13 @@ public class MovementCharacter : MonoBehaviour
             {
                 Vector3 shotPoint = new Vector3(shotPointTransform.position.x-0.5f, shotPointTransform.position.y, shotPointTransform.position.z);
                  GameObject go = Instantiate(bullet, shotPoint, Quaternion.Euler(0, 180, 0));
-                go.GetComponent<Rigidbody2D>().velocity = new Vector2 (-1,0);
+                go.GetComponent<Rigidbody2D>().velocity = new Vector2 (-1,0) * bulletSpeed;
             } 
             else if(sR.flipX == false)
             {
                 Vector3 shotPoint = new Vector3(shotPointTransform.position.x+0.5f, shotPointTransform.position.y, shotPointTransform.position.z); 
                 GameObject go = Instantiate(bullet, shotPoint, Quaternion.identity); 
-                go.GetComponent<Rigidbody2D>().velocity = new Vector2 (1,0); 
+                go.GetComponent<Rigidbody2D>().velocity = new Vector2 (1,0) * bulletSpeed; 
             }
             
         }
