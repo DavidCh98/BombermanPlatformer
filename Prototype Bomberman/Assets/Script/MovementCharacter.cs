@@ -115,7 +115,7 @@ public class MovementCharacter : MonoBehaviour
             if(sR.flipX == true)
             {
                 Vector3 shotPoint = new Vector3(shotPointTransform.position.x-0.5f, shotPointTransform.position.y, shotPointTransform.position.z);
-                 GameObject go = Instantiate(bullet, shotPoint, Quaternion.Euler(0, 180, 0));
+                GameObject go = Instantiate(bullet, shotPoint, Quaternion.Euler(0, 180, 0));
                 go.GetComponent<Rigidbody2D>().velocity = new Vector2 (-1,0) * bulletSpeed;
             } 
             else if(sR.flipX == false)
@@ -167,7 +167,9 @@ public class MovementCharacter : MonoBehaviour
             Destroy(col.gameObject);
             speed = 7;
         }
-        
+        if (col.gameObject.tag == "spikes"){
+            Destroy(gameObject);
+        }
     }  
 }
 
