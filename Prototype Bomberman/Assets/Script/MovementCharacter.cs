@@ -22,11 +22,7 @@ public class MovementCharacter : MonoBehaviour
     public KeyCode right;
     public KeyCode shoot;
     public KeyCode dropWeapon;
-    public KeyCode firstWeapon;
-    public KeyCode secondWeapon;
-    public GameObject[] weapons;
-    public int weaponsInInventory;
-    public int currentlySelectedWeapon;
+    public GameObject weapon;
     public GameObject bullet;
     public GameObject slime;
     #endregion 
@@ -34,8 +30,7 @@ public class MovementCharacter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        weaponsInInventory = 0;
-        currentlySelectedWeapon = 0;
+
         slime =  GameObject.FindWithTag("slime");
 
         speed = 5;
@@ -48,8 +43,6 @@ public class MovementCharacter : MonoBehaviour
             right = KeyCode.D;
             dropWeapon = KeyCode.Q;
             shoot = KeyCode.LeftShift;
-            firstWeapon = KeyCode.Alpha1;
-            secondWeapon = KeyCode.Alpha2;
 
         } 
         else if (this.name == "CharacterB")
@@ -61,8 +54,6 @@ public class MovementCharacter : MonoBehaviour
             right = KeyCode.RightArrow;
             dropWeapon = KeyCode.RightControl;
             shoot = KeyCode.RightShift;
-            firstWeapon = KeyCode.Keypad1;
-            secondWeapon = KeyCode.Keypad2;
         }
         sR = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
@@ -105,8 +96,7 @@ public class MovementCharacter : MonoBehaviour
         }
         if(Input.GetKeyDown(dropWeapon) == true)
         {
-            weapons[currentlySelectedWeapon] = null;
-            weaponsInInventory--;
+            weapon = null;
         }
         if (Input.GetKeyDown(shoot) == true)
         {
@@ -114,24 +104,17 @@ public class MovementCharacter : MonoBehaviour
             //changes position of bullet spawning point
             if(sR.flipX == true)
             {
-                Vector3 shotPoint = new Vector3(shotPointTransform.position.x-0.5f, shotPointTransform.position.y, shotPointTransform.position.z);
+                Vector3 shotPoint = new Vector3(shotPointTransform.position.x-0.8f, shotPointTransform.position.y, shotPointTransform.position.z);
                 GameObject go = Instantiate(bullet, shotPoint, Quaternion.Euler(0, 180, 0));
                 go.GetComponent<Rigidbody2D>().velocity = new Vector2 (-1,0) * bulletSpeed;
             } 
             else if(sR.flipX == false)
             {
-                Vector3 shotPoint = new Vector3(shotPointTransform.position.x+0.5f, shotPointTransform.position.y, shotPointTransform.position.z); 
+                Vector3 shotPoint = new Vector3(shotPointTransform.position.x+0.8f, shotPointTransform.position.y, shotPointTransform.position.z); 
                 GameObject go = Instantiate(bullet, shotPoint, Quaternion.identity); 
                 go.GetComponent<Rigidbody2D>().velocity = new Vector2 (1,0) * bulletSpeed; 
             }
             
-        }
-        if (Input.GetKeyDown(firstWeapon))
-        {
-            currentlySelectedWeapon = 0;
-        } else if (Input.GetKeyDown(secondWeapon))
-        {
-            currentlySelectedWeapon = 1;
         }
         //timer for power ups
         if (speed == 1 || speed == 7){
@@ -154,10 +137,9 @@ public class MovementCharacter : MonoBehaviour
         if (col.gameObject.tag == "banana")
         {
             col.transform.localScale = new Vector3(0.2f,0.2f,0.2f);
-            col.gameObject.GetComponent<SpriteRenderer>().flipY = true;
+            col.gameObject.GetComponent<SpriteRenderer>().flipY = false;
             Debug.Log("Collided with " + col.gameObject.name);
-            weapons[weaponsInInventory]= col.gameObject;
-            weaponsInInventory ++;
+            weapon= col.gameObject;
         }
         if (col.gameObject.tag == "slime"){
             Destroy(col.gameObject);

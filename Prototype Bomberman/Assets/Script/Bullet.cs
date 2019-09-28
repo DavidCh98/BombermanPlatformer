@@ -23,11 +23,16 @@ public class Bullet : MonoBehaviour
         }
     }
     private void OnTriggerEnter2D(Collider2D other) {
+        
         Destroy(gameObject);
-        LifeController lives = other.gameObject.GetComponent<LifeController>();
-        ScoreController score = other.gameObject.GetComponent<ScoreController>();
-        lives.lives--;
-        score.score = score.score+10;
+        if (other.gameObject.tag == "Player")
+        {
+            LifeController lives = other.gameObject.GetComponent<LifeController>();
+            ScoreController score = other.gameObject.GetComponent<ScoreController>();
+            lives.lives--;
+            score.score = score.score+10;
+        }
+        
     }
     void timerEnded()
     {

@@ -21,7 +21,7 @@ public class WeaponController : MonoBehaviour
     {
         MovementCharacter mvChar = player.GetComponent<MovementCharacter>();
         playerPos = new Vector3(player.transform.position.x,player.transform.position.y,player.transform.position.z);
-        Instantiate(mvChar.weapons[mvChar.currentlySelectedWeapon],new Vector3(playerPos.x + 1,playerPos.y,playerPos.z), Quaternion.identity);
+        Instantiate(mvChar.weapon,new Vector3(playerPos.x + 1,playerPos.y,playerPos.z), Quaternion.identity);
     }
 
     // Update is called once per frame
