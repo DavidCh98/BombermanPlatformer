@@ -98,7 +98,7 @@ public class MovementCharacter : MonoBehaviour
         {
             weapon = null;
         }
-        if (Input.GetKeyDown(shoot) == true)
+        if (Input.GetKeyDown(shoot) == true && weapon == true)
         {
             Transform shotPointTransform = this.GetComponentInChildren<Transform>();
             //changes position of bullet spawning point
@@ -139,7 +139,7 @@ public class MovementCharacter : MonoBehaviour
             col.transform.localScale = new Vector3(0.2f,0.2f,0.2f);
             col.gameObject.GetComponent<SpriteRenderer>().flipY = false;
             Debug.Log("Collided with " + col.gameObject.name);
-            weapon= col.gameObject;
+            weapon = col.gameObject;
         }
         if (col.gameObject.tag == "slime"){
             Destroy(col.gameObject);
