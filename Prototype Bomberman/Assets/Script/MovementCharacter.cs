@@ -128,7 +128,7 @@ public class MovementCharacter : MonoBehaviour
     }
 
     void OnCollisionEnter2D(Collision2D col) {
-        if(col.gameObject.name == "TilemapGround")
+        if(col.gameObject.name == "TilemapGround" || col.gameObject.name == "Destructable")
         {
             firstJump = false;
             secondJump = false;

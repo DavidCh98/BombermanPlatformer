@@ -12,6 +12,8 @@ TagManager:
   - slime
   - up
   - spikes
+  - dirt
+  - bullet
   layers:
   - Default
   - TransparentFX

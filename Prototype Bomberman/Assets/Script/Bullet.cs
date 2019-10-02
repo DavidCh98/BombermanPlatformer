@@ -22,7 +22,7 @@ public class Bullet : MonoBehaviour
             timerEnded();
         }
     }
-    private void OnTriggerEnter2D(Collider2D other) {
+    private void OnCollisionEnter2D(Collision2D other) {
         
         Destroy(gameObject);
         if (other.gameObject.tag == "Player")
@@ -32,7 +32,6 @@ public class Bullet : MonoBehaviour
             lives.lives--;
             score.score = score.score+10;
         }
-        
     }
     void timerEnded()
     {

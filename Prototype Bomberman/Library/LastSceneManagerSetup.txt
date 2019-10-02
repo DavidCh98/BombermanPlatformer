@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Game.unity
+- path: C:/Users/David/Downloads/2Demo/Assets/Scenes/mapped.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
