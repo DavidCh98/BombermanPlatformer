@@ -39,14 +39,5 @@ public class WeaponController : MonoBehaviour
             this.GetComponent<SpriteRenderer>().flipX = false;
             transform.position = new Vector3(player.transform.position.x +0.4f,player.transform.position.y,player.transform.position.z); 
         }
-        if(Input.GetKeyDown(mvChar.dropWeapon) == true)
-        {
-            player = null;
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D other) 
-    {
-        this.GetComponent<BoxCollider2D>().isTrigger = false;    
     }
 }

@@ -21,10 +21,10 @@ public class MovementCharacter : MonoBehaviour
     public KeyCode left;
     public KeyCode right;
     public KeyCode shoot;
-    public KeyCode dropWeapon;
     public GameObject weapon;
     public GameObject bullet;
     public GameObject slime;
+    private bool haveGun;
     #endregion 
 
     // Start is called before the first frame update
@@ -41,7 +41,6 @@ public class MovementCharacter : MonoBehaviour
             down = KeyCode.S;
             left = KeyCode.A;
             right = KeyCode.D;
-            dropWeapon = KeyCode.Q;
             shoot = KeyCode.LeftShift;
 
         } 
@@ -52,7 +51,6 @@ public class MovementCharacter : MonoBehaviour
             down = KeyCode.DownArrow;
             left = KeyCode.LeftArrow;
             right = KeyCode.RightArrow;
-            dropWeapon = KeyCode.RightControl;
             shoot = KeyCode.RightShift;
         }
         sR = GetComponent<SpriteRenderer>();
@@ -75,7 +73,6 @@ public class MovementCharacter : MonoBehaviour
             rigbod.velocity = new Vector2(rigbod.velocity.x, jumpForce);
             secondJump = true;
         } 
-        
          
         if(Input.GetKey(right))
         {
@@ -94,10 +91,7 @@ public class MovementCharacter : MonoBehaviour
             animator.SetBool("CharacterAnimation",false);
             rigbod.velocity= new Vector2(0, rigbod.velocity.y);
         }
-        if(Input.GetKeyDown(dropWeapon) == true)
-        {
-            weapon = null;
-        }
+
         if (Input.GetKeyDown(shoot) == true && weapon == true)
         {
             Transform shotPointTransform = this.GetComponentInChildren<Transform>();
@@ -124,7 +118,15 @@ public class MovementCharacter : MonoBehaviour
                 speed = 5;
                 targetTime = restartTargetTime;
             }
-        }        
+        }else if (haveGun == true){
+            targetTime -= Time.deltaTime;
+            if (targetTime <= 0)
+            {
+                Destroy(weapon);
+                haveGun = false;
+                targetTime = restartTargetTime;
+            }
+        }      
     }
 
     void OnCollisionEnter2D(Collision2D col) {
@@ -140,6 +142,7 @@ public class MovementCharacter : MonoBehaviour
             col.gameObject.GetComponent<SpriteRenderer>().flipY = false;
             Debug.Log("Collided with " + col.gameObject.name);
             weapon = col.gameObject;
+            haveGun = true;
         }
         if (col.gameObject.tag == "slime"){
             Destroy(col.gameObject);

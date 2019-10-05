@@ -66,7 +66,6 @@
      <Compile Include="Assets\Script\ScoreController.cs" />
      <Compile Include="Assets\Script\SpawnItem.cs" />
      <Compile Include="Assets\Script\WeaponController.cs" />
-     <Compile Include="Assets\Script\WinController.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>D:/Hanze/year2/Group stuff/Git/BombermanPLatformer/Prototype Bomberman/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
