@@ -118,15 +118,15 @@ public class MovementCharacter : MonoBehaviour
                 speed = 5;
                 targetTime = restartTargetTime;
             }
-        }else if (haveGun == true){
-            targetTime -= Time.deltaTime;
-            if (targetTime <= 0)
-            {
-                Destroy(weapon);
-                haveGun = false;
-                targetTime = restartTargetTime;
-            }
-        }      
+        }//else if (haveGun == true){
+        //     targetTime -= Time.deltaTime;
+        //     if (targetTime <= 0)
+        //     {
+        //         Destroy(weapon);
+        //         haveGun = false;
+        //         targetTime = restartTargetTime;
+        //     }
+        // }      
     }
 
     void OnCollisionEnter2D(Collision2D col) {

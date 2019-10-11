@@ -23,9 +23,8 @@ public class Destructable : MonoBehaviour
         if (other.gameObject.tag == "bullet"){
             tm.SetTile(celPos, null);
             SpawnItem();
+            Debug.Log(other.gameObject.tag);
         }
-        Debug.Log(other.gameObject.tag);
-           
     }
 
     private void SpawnItem ()
