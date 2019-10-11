@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1055566179498297395}
   - component: {fileID: 6276516379779037503}
-  - component: {fileID: 178580677006895374}
-  - component: {fileID: 6431623495848412398}
+  - component: {fileID: -6305052473348722704}
+  - component: {fileID: -4836315615987920358}
   m_Layer: 0
   m_Name: slime
   m_TagString: slime
@@ -27,8 +27,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7384095854811689345}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.4856, y: -1.59, z: 0}
-  m_LocalScale: {x: 0.24837297, y: 0.38845998, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.276, y: 0.234, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -71,18 +71,18 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 8cb98a678202544429972835375a7714, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a3429aab79c9976418d3c45fefbc4120, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 3.86, y: 2.02}
+  m_Size: {x: 3, y: 3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &178580677006895374
+--- !u!61 &-6305052473348722704
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -95,20 +95,20 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.042440772, y: -0.000000059604645}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.86, y: 2.02}
-    newSize: {x: 3.86, y: 2.02}
+    oldSize: {x: 3, y: 3}
+    newSize: {x: 3, y: 3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.0960586, y: 1.4907833}
+  m_Size: {x: 3, y: 3}
   m_EdgeRadius: 0
---- !u!50 &6431623495848412398
+--- !u!50 &-4836315615987920358
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -128,4 +128,4 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 0

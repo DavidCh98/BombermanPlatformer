@@ -14,7 +14,6 @@ TagManager:
   - spikes
   - dirt
   - bullet
-  - rock
   layers:
   - Default
   - TransparentFX

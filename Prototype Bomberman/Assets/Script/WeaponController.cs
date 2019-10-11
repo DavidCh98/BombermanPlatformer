@@ -9,6 +9,13 @@ public class WeaponController : MonoBehaviour
     private Vector3 playerPos;    
     
     
+    private void OnCollisionEnter2D(Collision2D other) 
+    {
+        
+        player = other.gameObject;
+        this.GetComponent<BoxCollider2D>().isTrigger = true;
+    }
+    
     // Start is called before the first frame update
     void Start()
     {

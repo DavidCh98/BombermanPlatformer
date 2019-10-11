@@ -22,11 +22,9 @@ public class MovementCharacter : MonoBehaviour
     public KeyCode right;
     public KeyCode shoot;
     public GameObject weapon;
-    public GameObject weaponSprite;
     public GameObject bullet;
     public GameObject slime;
     private bool haveGun;
-    private Vector2 playerPos;
     #endregion 
 
     // Start is called before the first frame update
@@ -58,8 +56,6 @@ public class MovementCharacter : MonoBehaviour
         sR = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         rigbod = this.GetComponent<Rigidbody2D>();
-
-        playerPos = new Vector3(transform.position.x,transform.position.y,transform.position.z);
     }
 
     // Update is called once per frame
@@ -115,7 +111,7 @@ public class MovementCharacter : MonoBehaviour
             
         }
         //timer for power ups
-        if (speed == 1 || speed == 7 || speed == 0){
+        if (speed == 1 || speed == 7){
             targetTime -= Time.deltaTime;
             if (targetTime <= 0)
             {
@@ -130,16 +126,7 @@ public class MovementCharacter : MonoBehaviour
         //         haveGun = false;
         //         targetTime = restartTargetTime;
         //     }
-        if(this.GetComponent<SpriteRenderer>().flipX == true)
-        {
-            weaponSprite.GetComponent<SpriteRenderer>().flipX = true;
-            weaponSprite.transform.position = new Vector2(this.transform.position.x -0.4f,this.transform.position.y); 
-        }
-        else if (this.GetComponent<SpriteRenderer>().flipX == false)
-        {
-            weaponSprite.GetComponent<SpriteRenderer>().flipX = false;
-            weaponSprite.transform.position = new Vector2(this.transform.position.x +0.4f,this.transform.position.y); 
-        }    
+        // }      
     }
 
     void OnCollisionEnter2D(Collision2D col) {
@@ -149,15 +136,14 @@ public class MovementCharacter : MonoBehaviour
             secondJump = false;
             Debug.Log("I hit the ground");
         }
-        // if (col.gameObject.tag == "banana")
-        // {
-        //     col.transform.localScale = new Vector2(0.2f,0.2f);
-        //     col.gameObject.GetComponent<SpriteRenderer>().flipY = false;
-        //     Debug.Log("Collided with " + col.gameObject.name);
-        //     weapon = col.gameObject;
-        //     haveGun = true;
-            
-        // }
+        if (col.gameObject.tag == "banana")
+        {
+            col.transform.localScale = new Vector3(0.2f,0.2f,0.2f);
+            col.gameObject.GetComponent<SpriteRenderer>().flipY = false;
+            Debug.Log("Collided with " + col.gameObject.name);
+            weapon = col.gameObject;
+            haveGun = true;
+        }
         if (col.gameObject.tag == "slime"){
             Destroy(col.gameObject);
             speed = 1;
@@ -165,10 +151,6 @@ public class MovementCharacter : MonoBehaviour
         if (col.gameObject.tag == "up"){
             Destroy(col.gameObject);
             speed = 7;
-        }
-        if (col.gameObject.tag == "rock"){
-            Destroy(col.gameObject);
-            speed = 0;
         }
         if (col.gameObject.tag == "spikes"){
             Destroy(gameObject);

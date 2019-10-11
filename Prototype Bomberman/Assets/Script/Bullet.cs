@@ -30,6 +30,7 @@ public class Bullet : MonoBehaviour
             LifeController lives = other.gameObject.GetComponent<LifeController>();
             ScoreController score = other.gameObject.GetComponent<ScoreController>();
             lives.lives--;
+            score.score = score.score+10;
         }
     }
     void timerEnded()

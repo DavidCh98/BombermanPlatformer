@@ -23,16 +23,15 @@ public class Destructable : MonoBehaviour
         if (other.gameObject.tag == "bullet"){
             tm.SetTile(celPos, null);
             SpawnItem();
+            Debug.Log(other.gameObject.tag);
         }
-        Debug.Log(other.gameObject.tag);
-           
     }
 
     private void SpawnItem ()
     {
         Bullet bullet = GetComponent<Bullet>();
-        int randomItem = Random.Range(0,3);
-        int spawnChance = Random.Range(0, 100); 
+        int randomItem = Random.Range(0,4);
+        int spawnChance = Random.Range(0, 101); 
         objectPos = new Vector2(celPos.x + 0.5f, celPos.y+0.5f);
 
         switch(spawnChance)
