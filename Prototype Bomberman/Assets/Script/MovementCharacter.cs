@@ -115,7 +115,7 @@ public class MovementCharacter : MonoBehaviour
             
         }
         //timer for power ups
-        if (speed == 1 || speed == 7){
+        if (speed == 1 || speed == 7 || speed == 0){
             targetTime -= Time.deltaTime;
             if (targetTime <= 0)
             {
@@ -165,6 +165,10 @@ public class MovementCharacter : MonoBehaviour
         if (col.gameObject.tag == "up"){
             Destroy(col.gameObject);
             speed = 7;
+        }
+        if (col.gameObject.tag == "rock"){
+            Destroy(col.gameObject);
+            speed = 0;
         }
         if (col.gameObject.tag == "spikes"){
             Destroy(gameObject);
