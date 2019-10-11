@@ -1165,7 +1165,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 1848328609203056122, guid: 56c605752d7214d60acbf79fd5c1ec30, type: 3}
   items:
-  - {fileID: 1391331385384474983, guid: cda8048b1ea236b408397d6f0b46b9d7, type: 3}
+  - {fileID: 1391331385384474983, guid: 08320cdbbc05c7445900539722bbae0e, type: 3}
   - {fileID: 7384095854811689345, guid: 4daf8902cfa102c48b40bfe1605ab2d5, type: 3}
   - {fileID: 7036450487299134207, guid: f4f96c0841217b84fbf220211cf34fd8, type: 3}
   objectPos: {x: 0, y: 0}
