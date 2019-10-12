@@ -15,6 +15,7 @@ TagManager:
   - dirt
   - bullet
   - rock
+  - build
   layers:
   - Default
   - TransparentFX

@@ -21,12 +21,16 @@ public class MovementCharacter : MonoBehaviour
     public KeyCode left;
     public KeyCode right;
     public KeyCode shoot;
+    public KeyCode spawnTile;
+    public GameObject tile;
     public GameObject weapon;
     public GameObject weaponSprite;
     public GameObject bullet;
     public GameObject slime;
     private bool haveGun;
+    private bool allowSpawn = false;
     private Vector2 playerPos;
+     [SerializeField] 
     #endregion 
 
     // Start is called before the first frame update
@@ -44,6 +48,7 @@ public class MovementCharacter : MonoBehaviour
             left = KeyCode.A;
             right = KeyCode.D;
             shoot = KeyCode.LeftShift;
+            spawnTile =  KeyCode.F;
 
         } 
         else if (this.name == "CharacterB")
@@ -54,6 +59,7 @@ public class MovementCharacter : MonoBehaviour
             left = KeyCode.LeftArrow;
             right = KeyCode.RightArrow;
             shoot = KeyCode.RightShift;
+            spawnTile =  KeyCode.Keypad0;
         }
         sR = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
@@ -95,8 +101,24 @@ public class MovementCharacter : MonoBehaviour
             animator.SetBool("CharacterAnimation",false);
             rigbod.velocity= new Vector2(0, rigbod.velocity.y);
         }
+        if (Input.GetKeyDown(spawnTile) == true && allowSpawn == true){
+            Transform shotPointTransform = this.GetComponentInChildren<Transform>();
+            if(sR.flipX == true)
+            {
+                Vector3 shotPoint = new Vector3(shotPointTransform.position.x-0.8f, shotPointTransform.position.y, shotPointTransform.position.z);
+                Instantiate(tile, shotPoint,Quaternion.Euler(0, 180, 0));
+                Debug.Log("spawnTile180");
+                
+            } 
+            else if(sR.flipX == false)
+            {
+                Vector3 shotPoint = new Vector3(shotPointTransform.position.x+0.8f, shotPointTransform.position.y, shotPointTransform.position.z); 
+                Instantiate(tile, shotPoint, Quaternion.identity); 
+                Debug.Log("spawnTileNormal");
+            }  
+        }
 
-        if (Input.GetKeyDown(shoot) == true && weapon == true)
+        if (Input.GetKeyDown(shoot) == true)
         {
             Transform shotPointTransform = this.GetComponentInChildren<Transform>();
             //changes position of bullet spawning point
@@ -111,8 +133,7 @@ public class MovementCharacter : MonoBehaviour
                 Vector3 shotPoint = new Vector3(shotPointTransform.position.x+0.8f, shotPointTransform.position.y, shotPointTransform.position.z); 
                 GameObject go = Instantiate(bullet, shotPoint, Quaternion.identity); 
                 go.GetComponent<Rigidbody2D>().velocity = new Vector2 (1,0) * bulletSpeed; 
-            }
-            
+            }  
         }
         //timer for power ups
         if (speed == 1 || speed == 7 || speed == 0){
@@ -122,14 +143,14 @@ public class MovementCharacter : MonoBehaviour
                 speed = 5;
                 targetTime = restartTargetTime;
             }
-        }//else if (haveGun == true){
-        //     targetTime -= Time.deltaTime;
-        //     if (targetTime <= 0)
-        //     {
-        //         Destroy(weapon);
-        //         haveGun = false;
-        //         targetTime = restartTargetTime;
-        //     }
+        }else if (allowSpawn == true){
+            targetTime -= Time.deltaTime;
+            if (targetTime <= 0)
+            {
+                allowSpawn = false;
+                targetTime = restartTargetTime;
+            }
+        }
         if(this.GetComponent<SpriteRenderer>().flipX == true)
         {
             weaponSprite.GetComponent<SpriteRenderer>().flipX = true;
@@ -143,7 +164,7 @@ public class MovementCharacter : MonoBehaviour
     }
 
     void OnCollisionEnter2D(Collision2D col) {
-        if(col.gameObject.name == "TilemapGround" || col.gameObject.name == "Destructable")
+        if(col.gameObject.name == "TilemapGround" || col.gameObject.name == "Destructable" || col.gameObject.name == "tile(Clone)")
         {
             firstJump = false;
             secondJump = false;
@@ -169,6 +190,10 @@ public class MovementCharacter : MonoBehaviour
         if (col.gameObject.tag == "rock"){
             Destroy(col.gameObject);
             speed = 0;
+        }
+          if (col.gameObject.tag == "build"){
+            Destroy(col.gameObject);
+            allowSpawn = true;
         }
         if (col.gameObject.tag == "spikes"){
             Destroy(gameObject);
