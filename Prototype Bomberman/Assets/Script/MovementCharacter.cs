@@ -90,16 +90,19 @@ public class MovementCharacter : MonoBehaviour
             rigbod.velocity = new Vector2(speed, rigbod.velocity.y);
             sR.flipX = false;
             animator.SetBool("CharacterAnimation",true);
+            animator.SetBool("AnimationA",true);
         }
         if(Input.GetKey(left))
         {
             rigbod.velocity = new Vector2(-speed, rigbod.velocity.y);
             sR.flipX = true;
             animator.SetBool("CharacterAnimation",true);
+            animator.SetBool("AnimationA",true);
         }
         if (Input.GetKeyUp(left) == true || Input.GetKeyUp(right) == true || Input.GetKeyUp(up) == true)
         {
             animator.SetBool("CharacterAnimation",false);
+            animator.SetBool("AnimationA",false);
             rigbod.velocity= new Vector2(0, rigbod.velocity.y);
         }
         if (Input.GetKeyDown(spawnTile) == true && allowSpawn == true){

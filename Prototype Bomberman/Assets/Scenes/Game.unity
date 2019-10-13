@@ -3995,8 +3995,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 978134533}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.149, y: -0.038, z: 0}
-  m_LocalScale: {x: 0.08, y: 0.08, z: 1}
+  m_LocalPosition: {x: 0.87, y: -0.08, z: 0}
+  m_LocalScale: {x: 0.54668295, y: 0.6020382, z: 1}
   m_Children: []
   m_Father: {fileID: 1879035548}
   m_RootOrder: 0
@@ -5288,18 +5288,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 1
-  m_Offset: {x: 0.0076541454, y: -0.006088704}
+  m_Offset: {x: 0.00765574, y: 0.009037614}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.33, y: 0.32}
+    oldSize: {x: 1.79, y: 2.61}
     newSize: {x: 0.33, y: 0.32}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.19362763, y: 0.28449285}
+  m_Size: {x: 1.3407753, y: 2.1501687}
   m_EdgeRadius: 0
 --- !u!50 &1879035545
 Rigidbody2D:
@@ -5332,7 +5332,7 @@ Animator:
   m_GameObject: {fileID: 1879035540}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e4dd494f78e5c9d468d98b0c9d3826f2, type: 2}
+  m_Controller: {fileID: 9100000, guid: 2ab9b31e58f749c4da01b8206d8b0843, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -5379,7 +5379,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8833380039444249864, guid: d568fbb38f3dfa84baa260b84a81103c,
+  m_Sprite: {fileID: -4398183398628465896, guid: 6d6c798350735a44fb32b68daa583d87,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5399,8 +5399,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1879035540}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15.09, y: -6.49, z: 0}
-  m_LocalScale: {x: 2.78, y: 2.7200003, z: 1}
+  m_LocalPosition: {x: -14.97, y: -6.58, z: 0}
+  m_LocalScale: {x: 0.39371938, y: 0.36096647, z: 1}
   m_Children:
   - {fileID: 978134535}
   m_Father: {fileID: 0}
@@ -5426,20 +5426,20 @@ CompositeCollider2D:
   m_ColliderPaths:
   - m_Collider: {fileID: 1879035544}
     m_ColliderPaths:
-    - - X: 2904180
-        Y: -4034716
-      - X: 2904180
-        Y: 3703490
-      - X: -2478638
-        Y: 3703461
-      - X: -2478609
-        Y: -4034716
+    - - X: 2669559
+        Y: -3848071
+      - X: 2669559
+        Y: 3913316
+      - X: -2609304
+        Y: 3913287
+      - X: -2609275
+        Y: -3848071
   m_CompositePaths:
     m_Paths:
-    - - {x: 0.2904151, y: -0.40347162}
-      - {x: 0.2904151, y: 0.370349}
-      - {x: -0.2478638, y: 0.3703432}
-      - {x: -0.247858, y: -0.40347162}
+    - - {x: 0.266953, y: -0.3848071}
+      - {x: 0.266953, y: 0.3913316}
+      - {x: -0.2609304, y: 0.3913258}
+      - {x: -0.2609246, y: -0.3848071}
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.000005
 --- !u!1 &2133339667
