@@ -28,7 +28,6 @@ public class Bullet : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             LifeController lives = other.gameObject.GetComponent<LifeController>();
-            ScoreController score = other.gameObject.GetComponent<ScoreController>();
             lives.lives--;
         }
     }

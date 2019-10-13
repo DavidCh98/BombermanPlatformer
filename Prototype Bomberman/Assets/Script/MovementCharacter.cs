@@ -14,10 +14,10 @@ public class MovementCharacter : MonoBehaviour
     Animator animator;
     public bool firstJump;
     public bool secondJump;
+    private bool bugJump;
     private Rigidbody2D rigbod;
     private SpriteRenderer sR;
     public KeyCode up;
-    public KeyCode down;
     public KeyCode left;
     public KeyCode right;
     public KeyCode shoot;
@@ -44,7 +44,6 @@ public class MovementCharacter : MonoBehaviour
         {
             character = GameObject.Find("CharacterA").GetComponent<Transform>();
             up = KeyCode.W;
-            down = KeyCode.S;
             left = KeyCode.A;
             right = KeyCode.D;
             shoot = KeyCode.LeftShift;
@@ -55,7 +54,6 @@ public class MovementCharacter : MonoBehaviour
         {
             character = GameObject.Find("CharacterB").GetComponent<Transform>();
             up = KeyCode.UpArrow;
-            down = KeyCode.DownArrow;
             left = KeyCode.LeftArrow;
             right = KeyCode.RightArrow;
             shoot = KeyCode.RightShift;
@@ -72,17 +70,20 @@ public class MovementCharacter : MonoBehaviour
     void Update()
     {
         // Vector2 movement = Vector2.zero;
-
         if (Input.GetKeyDown(up) == true && firstJump == false)
         {
             Debug.Log("Jumping");
             rigbod.velocity = new Vector2(rigbod.velocity.x, jumpForce);
             firstJump = true;
-        } else if (Input.GetKeyDown(up) == true && firstJump == true && secondJump == false)
+        } else if (Input.GetKeyDown(up) == true && firstJump == true && secondJump == false && Input.GetKey(left) == false && Input.GetKey(right) == false)
         {
             rigbod.velocity = new Vector2(rigbod.velocity.x, jumpForce);
             secondJump = true;
-        } 
+            Debug.Log("Jumping2");
+        } else if (Input.GetKeyDown(up) == true && firstJump == true && secondJump == false && bugJump == false){
+            rigbod.velocity = new Vector2(rigbod.velocity.x, jumpForce);
+            bugJump = true;
+        }
          
         if(Input.GetKey(right))
         {
@@ -96,7 +97,7 @@ public class MovementCharacter : MonoBehaviour
             sR.flipX = true;
             animator.SetBool("CharacterAnimation",true);
         }
-        if (Input.GetKeyUp(left) == true || Input.GetKeyUp(right) == true || Input.GetKeyUp(up) == true || Input.GetKeyUp(down) == true)
+        if (Input.GetKeyUp(left) == true || Input.GetKeyUp(right) == true || Input.GetKeyUp(up) == true)
         {
             animator.SetBool("CharacterAnimation",false);
             rigbod.velocity= new Vector2(0, rigbod.velocity.y);
@@ -164,10 +165,11 @@ public class MovementCharacter : MonoBehaviour
     }
 
     void OnCollisionEnter2D(Collision2D col) {
-        if(col.gameObject.name == "TilemapGround" || col.gameObject.name == "Destructable" || col.gameObject.name == "tile(Clone)")
+        if(col.gameObject.name == "Destructable" || col.gameObject.name == "TilemapGround"  || col.gameObject.name == "tile(Clone)")
         {
             firstJump = false;
             secondJump = false;
+            bugJump = false;
             Debug.Log("I hit the ground");
         }
         // if (col.gameObject.tag == "banana")

@@ -61,7 +61,6 @@
      <Compile Include="Assets\Script\LifeController.cs" />
      <Compile Include="Assets\Script\MainMenu.cs" />
      <Compile Include="Assets\Script\MovementCharacter.cs" />
-     <Compile Include="Assets\Script\ScoreController.cs" />
      <Compile Include="Assets\Script\SpawnItem.cs" />
      <Compile Include="Assets\Script\TilePrefabScript.cs" />
      <Compile Include="Assets\Script\WeaponController.cs" />
