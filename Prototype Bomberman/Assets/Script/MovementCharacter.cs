@@ -76,17 +76,21 @@ public class MovementCharacter : MonoBehaviour
             Debug.Log("Jumping");
             rigbod.velocity = new Vector2(rigbod.velocity.x, jumpForce);
             firstJump = true;
+            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Jump");
         } else if (Input.GetKeyDown(up) == true && firstJump == true && secondJump == false && Input.GetKey(left) == false && Input.GetKey(right) == false)
         {
             rigbod.velocity = new Vector2(rigbod.velocity.x, jumpForce);
             secondJump = true;
             Debug.Log("Jumping2");
-        } else if (Input.GetKeyDown(up) == true && firstJump == true && secondJump == false && bugJump == false){
+            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Jump");
+        }
+        else if (Input.GetKeyDown(up) == true && firstJump == true && secondJump == false && bugJump == false){
             rigbod.velocity = new Vector2(rigbod.velocity.x, jumpForce);
             bugJump = true;
+            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Jump");
         }
-         
-        if(Input.GetKey(right))
+
+        if (Input.GetKey(right))
         {
             rigbod.velocity = new Vector2(speed, rigbod.velocity.y);
             sR.flipX = false;
