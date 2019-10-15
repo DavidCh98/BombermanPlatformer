@@ -30,6 +30,7 @@ public class MovementCharacter : MonoBehaviour
     private bool haveGun;
     private bool allowSpawn = false;
     private Vector2 playerPos;
+    public bool PlayerisSlimed;
      [SerializeField] 
     #endregion 
 
@@ -174,6 +175,7 @@ public class MovementCharacter : MonoBehaviour
             secondJump = false;
             bugJump = false;
             Debug.Log("I hit the ground");
+            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Land");
         }
         // if (col.gameObject.tag == "banana")
         // {
@@ -187,21 +189,28 @@ public class MovementCharacter : MonoBehaviour
         if (col.gameObject.tag == "slime"){
             Destroy(col.gameObject);
             speed = 1;
+            FMODUnity.RuntimeManager.PlayOneShot("Event:/SFX/Slime");
         }
         if (col.gameObject.tag == "up"){
             Destroy(col.gameObject);
             speed = 7;
+            FMODUnity.RuntimeManager.PlayOneShot("Event:/SFX/SpeedUp");
         }
         if (col.gameObject.tag == "rock"){
             Destroy(col.gameObject);
             speed = 0;
+            FMODUnity.RuntimeManager.PlayOneShot("Event:/SFX/Stone");
+
         }
-          if (col.gameObject.tag == "build"){
+        if (col.gameObject.tag == "build"){
             Destroy(col.gameObject);
             allowSpawn = true;
+            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Hammer");
         }
         if (col.gameObject.tag == "spikes"){
             Destroy(gameObject);
+            FMODUnity.RuntimeManager.PlayOneShot("Event:/SFX/HitSpikes");
+
         }
     }  
 }
