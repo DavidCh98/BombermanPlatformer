@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="ParameterPreset" id="{844bd7da-6619-4263-bda5-ab3a346999b7}">
+		<property name="name">
+			<value>Slimed</value>
+		</property>
+		<relationship name="folder">
+			<destination>{e134029e-8bd2-4ae6-96c1-12007a9f22c1}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{12177955-3118-4f79-837a-90f4b4e7690b}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{12177955-3118-4f79-837a-90f4b4e7690b}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>
