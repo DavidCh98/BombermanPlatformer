@@ -4286,6 +4286,7 @@ GameObject:
   - component: {fileID: 1196094310}
   - component: {fileID: 1196094308}
   - component: {fileID: 1196094316}
+  - component: {fileID: 1196094309}
   m_Layer: 11
   m_Name: CharacterB
   m_TagString: Player
@@ -4321,6 +4322,24 @@ MonoBehaviour:
   weaponSprite: {fileID: 690848311}
   bullet: {fileID: 1848328609203056122, guid: 56c605752d7214d60acbf79fd5c1ec30, type: 3}
   slime: {fileID: 0}
+--- !u!114 &1196094309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1196094307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e484129a5cb34a03ba8b6dd26da8e51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerismoving: 0
+  playerisgrounded: 0
+  playerisnormal: 0
+  playerisslimed: 0
+  playerisfast: 0
+  walkingspeed: 0
 --- !u!114 &1196094310
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5240,6 +5259,7 @@ GameObject:
   - component: {fileID: 1879035543}
   - component: {fileID: 1879035542}
   - component: {fileID: 1879035549}
+  - component: {fileID: 1879035541}
   m_Layer: 11
   m_Name: CharacterA
   m_TagString: Player
@@ -5247,6 +5267,24 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1879035541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1879035540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65052cba848a84898829ff854b15dfda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerismoving: 0
+  playerisgrounded: 0
+  playerisnormal: 0
+  playerisslimed: 0
+  playerisfast: 0
+  walkingspeed: 0
 --- !u!114 &1879035542
 MonoBehaviour:
   m_ObjectHideFlags: 0
