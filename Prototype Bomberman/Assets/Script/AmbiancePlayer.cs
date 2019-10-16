@@ -12,6 +12,7 @@ public class AmbiancePlayer : MonoBehaviour
     {
         Ambiance = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/JungleAmbiance");
         Ambiance.start();
+        Ambiance.release();
     }
 
     // Update is called once per frame
