@@ -129,6 +129,7 @@ public class MovementCharacter : MonoBehaviour
 
         if (Input.GetKeyDown(shoot) == true)
         {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Shoot");
             Transform shotPointTransform = this.GetComponentInChildren<Transform>();
             //changes position of bullet spawning point
             if(sR.flipX == true)
