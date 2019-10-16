@@ -4466,6 +4466,7 @@ MonoBehaviour:
   weaponSprite: {fileID: 690848311}
   bullet: {fileID: 1848328609203056122, guid: 56c605752d7214d60acbf79fd5c1ec30, type: 3}
   slime: {fileID: 0}
+  PlayerisSlimed: 0
 --- !u!114 &1196094309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5502,6 +5503,7 @@ MonoBehaviour:
   weaponSprite: {fileID: 978134533}
   bullet: {fileID: 1848328609203056122, guid: 56c605752d7214d60acbf79fd5c1ec30, type: 3}
   slime: {fileID: 0}
+  PlayerisSlimed: 0
 --- !u!61 &1879035544
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5514,19 +5516,32 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
+<<<<<<< Updated upstream
   m_UsedByComposite: 0
   m_Offset: {x: 0.0076541454, y: -0.006088704}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 0.33, y: 0.32}
+=======
+  m_UsedByComposite: 1
+  m_Offset: {x: 0.00765574, y: 0.048297107}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.53, y: 2.38}
+>>>>>>> Stashed changes
     newSize: {x: 0.33, y: 0.32}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
+<<<<<<< Updated upstream
   m_Size: {x: 0.19362763, y: 0.28449285}
+=======
+  m_Size: {x: 1.3407753, y: 2.0716496}
+>>>>>>> Stashed changes
   m_EdgeRadius: 0
 --- !u!50 &1879035545
 Rigidbody2D:
@@ -5633,6 +5648,45 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< Updated upstream
+=======
+--- !u!66 &1879035549
+CompositeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1879035540}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_GeometryType: 0
+  m_GenerationType: 0
+  m_EdgeRadius: 0
+  m_ColliderPaths:
+  - m_Collider: {fileID: 1879035544}
+    m_ColliderPaths:
+    - - X: 2669559
+        Y: -3564643
+      - X: 2669559
+        Y: 3913316
+      - X: -2609304
+        Y: 3913287
+      - X: -2609275
+        Y: -3564643
+  m_CompositePaths:
+    m_Paths:
+    - - {x: 0.266953, y: -0.3564643}
+      - {x: 0.266953, y: 0.3913316}
+      - {x: -0.2609304, y: 0.3913258}
+      - {x: -0.2609246, y: -0.3564643}
+  m_VertexDistance: 0.0005
+  m_OffsetDistance: 0.000005
+>>>>>>> Stashed changes
 --- !u!1 &2133339667
 GameObject:
   m_ObjectHideFlags: 0
