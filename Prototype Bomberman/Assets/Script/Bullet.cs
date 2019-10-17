@@ -29,6 +29,7 @@ public class Bullet : MonoBehaviour
         {
             LifeController lives = other.gameObject.GetComponent<LifeController>();
             lives.lives--;
+            FMODUnity.RuntimeManager.PlayOneShot("Event:/SFX/Hit");
         }
     }
     void timerEnded()

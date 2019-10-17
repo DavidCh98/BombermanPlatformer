@@ -53,6 +53,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Script\AmbiancePlayer.cs" />
      <Compile Include="Assets\Script\Backup\MovementCharacterA.cs" />
      <Compile Include="Assets\Script\Backup\MovementCharacterB.cs" />
      <Compile Include="Assets\Script\Bullet.cs" />
