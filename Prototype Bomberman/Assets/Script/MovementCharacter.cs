@@ -24,7 +24,6 @@ public class MovementCharacter : MonoBehaviour
     public KeyCode spawnTile;
     public GameObject tile;
     public GameObject weapon;
-    public GameObject weaponSprite;
     public GameObject bullet;
     public GameObject slime;
     private bool haveGun;
@@ -76,13 +75,18 @@ public class MovementCharacter : MonoBehaviour
             Debug.Log("Jumping");
             rigbod.velocity = new Vector2(rigbod.velocity.x, jumpForce);
             firstJump = true;
+            animator.SetBool("Jumping",true);
             FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Jump");
         } else if (Input.GetKeyDown(up) == true && firstJump == true && secondJump == false && Input.GetKey(left) == false && Input.GetKey(right) == false)
         {
             rigbod.velocity = new Vector2(rigbod.velocity.x, jumpForce);
             secondJump = true;
             Debug.Log("Jumping2");
+            animator.SetBool("Jumping",true);
             FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Jump");
+        }else if (Input.GetKeyUp(up) == true)
+        {
+            animator.SetBool("Jumping",false);
         }
         else if (Input.GetKeyDown(up) == true && firstJump == true && secondJump == false && bugJump == false){
             rigbod.velocity = new Vector2(rigbod.velocity.x, jumpForce);
@@ -94,34 +98,31 @@ public class MovementCharacter : MonoBehaviour
         {
             rigbod.velocity = new Vector2(speed, rigbod.velocity.y);
             sR.flipX = false;
-            animator.SetBool("CharacterAnimation",true);
-            animator.SetBool("AnimationA",true);
+            animator.SetBool("Walking",true);
         }
         if(Input.GetKey(left))
         {
             rigbod.velocity = new Vector2(-speed, rigbod.velocity.y);
             sR.flipX = true;
-            animator.SetBool("CharacterAnimation",true);
-            animator.SetBool("AnimationA",true);
+            animator.SetBool("Walking",true);
         }
         if (Input.GetKeyUp(left) == true || Input.GetKeyUp(right) == true || Input.GetKeyUp(up) == true)
         {
-            animator.SetBool("CharacterAnimation",false);
-            animator.SetBool("AnimationA",false);
+            animator.SetBool("Walking",false);
             rigbod.velocity= new Vector2(0, rigbod.velocity.y);
         }
         if (Input.GetKeyDown(spawnTile) == true && allowSpawn == true){
             Transform shotPointTransform = this.GetComponentInChildren<Transform>();
             if(sR.flipX == true)
             {
-                Vector3 shotPoint = new Vector3(shotPointTransform.position.x-0.8f, shotPointTransform.position.y, shotPointTransform.position.z);
+                Vector2 shotPoint = new Vector2(Mathf.Round(shotPointTransform.position.x)-0.5f, Mathf.Round(shotPointTransform.position.y)+0.5f); 
                 Instantiate(tile, shotPoint,Quaternion.Euler(0, 180, 0));
                 Debug.Log("spawnTile180");
                 
             } 
             else if(sR.flipX == false)
             {
-                Vector3 shotPoint = new Vector3(shotPointTransform.position.x+0.8f, shotPointTransform.position.y, shotPointTransform.position.z); 
+                Vector2 shotPoint = new Vector2(Mathf.Round(shotPointTransform.position.x)+0.5f, Mathf.Round(shotPointTransform.position.y)+0.5f); 
                 Instantiate(tile, shotPoint, Quaternion.identity); 
                 Debug.Log("spawnTileNormal");
             }  
@@ -129,6 +130,7 @@ public class MovementCharacter : MonoBehaviour
 
         if (Input.GetKeyDown(shoot) == true)
         {
+            animator.SetBool("Punching",true);
             FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Shoot");
             Transform shotPointTransform = this.GetComponentInChildren<Transform>();
             //changes position of bullet spawning point
@@ -137,6 +139,7 @@ public class MovementCharacter : MonoBehaviour
                 Vector3 shotPoint = new Vector3(shotPointTransform.position.x-0.8f, shotPointTransform.position.y, shotPointTransform.position.z);
                 GameObject go = Instantiate(bullet, shotPoint, Quaternion.Euler(0, 180, 0));
                 go.GetComponent<Rigidbody2D>().velocity = new Vector2 (-1,0) * bulletSpeed;
+                
             } 
             else if(sR.flipX == false)
             {
@@ -144,6 +147,10 @@ public class MovementCharacter : MonoBehaviour
                 GameObject go = Instantiate(bullet, shotPoint, Quaternion.identity); 
                 go.GetComponent<Rigidbody2D>().velocity = new Vector2 (1,0) * bulletSpeed; 
             }  
+        } 
+        else if (Input.GetKeyUp(shoot) == true)
+        {
+            animator.SetBool("Punching",false);
         }
         //timer for power ups
         if (speed == 1 || speed == 7 || speed == 0){
@@ -161,16 +168,7 @@ public class MovementCharacter : MonoBehaviour
                 targetTime = restartTargetTime;
             }
         }
-        if(this.GetComponent<SpriteRenderer>().flipX == true)
-        {
-            weaponSprite.GetComponent<SpriteRenderer>().flipX = true;
-            weaponSprite.transform.position = new Vector2(this.transform.position.x -0.4f,this.transform.position.y); 
-        }
-        else if (this.GetComponent<SpriteRenderer>().flipX == false)
-        {
-            weaponSprite.GetComponent<SpriteRenderer>().flipX = false;
-            weaponSprite.transform.position = new Vector2(this.transform.position.x +0.4f,this.transform.position.y); 
-        }    
+       
     }
 
     void OnCollisionEnter2D(Collision2D col) {
