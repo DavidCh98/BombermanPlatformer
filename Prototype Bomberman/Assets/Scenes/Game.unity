@@ -4285,18 +4285,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 1
-  m_Offset: {x: 0.011705682, y: 0.00479874}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.33, y: 0.32}
+    oldSize: {x: 1.82, y: 2.73}
     newSize: {x: 0.33, y: 0.32}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.23616853, y: 0.3162775}
+  m_Size: {x: 1.7, y: 2.4}
   m_EdgeRadius: 0
 --- !u!50 &1196094312
 Rigidbody2D:
@@ -4329,7 +4329,7 @@ Animator:
   m_GameObject: {fileID: 1196094307}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e4dd494f78e5c9d468d98b0c9d3826f2, type: 2}
+  m_Controller: {fileID: 9100000, guid: 2ab9b31e58f749c4da01b8206d8b0843, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -4376,7 +4376,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8833380039444249864, guid: d568fbb38f3dfa84baa260b84a81103c,
+  m_Sprite: {fileID: -4398183398628465896, guid: 6d6c798350735a44fb32b68daa583d87,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
@@ -4397,7 +4397,7 @@ Transform:
   m_GameObject: {fileID: 1196094307}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 19.87, y: -6.5, z: 0}
-  m_LocalScale: {x: 2.78, y: 2.7200003, z: 1}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_Children:
   - {fileID: 690848313}
   m_Father: {fileID: 0}
@@ -4423,20 +4423,20 @@ CompositeCollider2D:
   m_ColliderPaths:
   - m_Collider: {fileID: 1196094311}
     m_ColliderPaths:
-    - - X: 3608131
-        Y: -4170848
-      - X: 3608131
-        Y: 4431900
-      - X: -2957324
-        Y: 4431871
-      - X: -2957295
-        Y: -4170848
+    - - X: 2549971
+        Y: -3600000
+      - X: 2549971
+        Y: 3600000
+      - X: -2550000
+        Y: 3599971
+      - X: -2549971
+        Y: -3600000
   m_CompositePaths:
     m_Paths:
-    - - {x: 0.3608102, y: -0.4170848}
-      - {x: 0.3608102, y: 0.44319}
-      - {x: -0.2957324, y: 0.4431842}
-      - {x: -0.2957266, y: -0.4170848}
+    - - {x: 0.2549942, y: -0.36}
+      - {x: 0.2549942, y: 0.36}
+      - {x: -0.255, y: 0.3599942}
+      - {x: -0.2549942, y: -0.36}
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.000005
 --- !u!1 &1205014958
@@ -5401,7 +5401,7 @@ SpriteRenderer:
   m_Size: {x: 1.6, y: 2.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1879035548
