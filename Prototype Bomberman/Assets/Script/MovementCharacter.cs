@@ -30,6 +30,7 @@ public class MovementCharacter : MonoBehaviour
     private bool haveGun;
     private bool allowSpawn = false;
     private Vector2 playerPos;
+    public bool PlayerisSlimed;
      [SerializeField] 
     #endregion 
 
@@ -75,19 +76,31 @@ public class MovementCharacter : MonoBehaviour
             Debug.Log("Jumping");
             rigbod.velocity = new Vector2(rigbod.velocity.x, jumpForce);
             firstJump = true;
+<<<<<<< HEAD
             animator.SetBool("Jumping",true);
+=======
+            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Jump");
+>>>>>>> b61a14875ba3a556ad643bd9513a5fb1ff06372d
         } else if (Input.GetKeyDown(up) == true && firstJump == true && secondJump == false && Input.GetKey(left) == false && Input.GetKey(right) == false)
         {
             rigbod.velocity = new Vector2(rigbod.velocity.x, jumpForce);
             secondJump = true;
+<<<<<<< HEAD
             Debug.Log("Jumping2");
             animator.SetBool("Jumping",true);
         } else if (Input.GetKeyDown(up) == true && firstJump == true && secondJump == false && bugJump == false){
+=======
+            Debug.Log("Jumping2");
+            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Jump");
+        }
+        else if (Input.GetKeyDown(up) == true && firstJump == true && secondJump == false && bugJump == false){
+>>>>>>> b61a14875ba3a556ad643bd9513a5fb1ff06372d
             rigbod.velocity = new Vector2(rigbod.velocity.x, jumpForce);
             bugJump = true;
+            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Jump");
         }
-         
-        if(Input.GetKey(right))
+
+        if (Input.GetKey(right))
         {
             rigbod.velocity = new Vector2(speed, rigbod.velocity.y);
             sR.flipX = false;
@@ -127,6 +140,7 @@ public class MovementCharacter : MonoBehaviour
 
         if (Input.GetKeyDown(shoot) == true)
         {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Shoot");
             Transform shotPointTransform = this.GetComponentInChildren<Transform>();
             animator.SetBool("Punching",true);
             //changes position of bullet spawning point
@@ -181,6 +195,7 @@ public class MovementCharacter : MonoBehaviour
             secondJump = false;
             bugJump = false;
             Debug.Log("I hit the ground");
+            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Land");
         }
         // if (col.gameObject.tag == "banana")
         // {
@@ -194,21 +209,28 @@ public class MovementCharacter : MonoBehaviour
         if (col.gameObject.tag == "slime"){
             Destroy(col.gameObject);
             speed = 1;
+            FMODUnity.RuntimeManager.PlayOneShot("Event:/SFX/Slime");
         }
         if (col.gameObject.tag == "up"){
             Destroy(col.gameObject);
             speed = 7;
+            FMODUnity.RuntimeManager.PlayOneShot("Event:/SFX/SpeedUp");
         }
         if (col.gameObject.tag == "rock"){
             Destroy(col.gameObject);
             speed = 0;
+            FMODUnity.RuntimeManager.PlayOneShot("Event:/SFX/Stone");
+
         }
-          if (col.gameObject.tag == "build"){
+        if (col.gameObject.tag == "build"){
             Destroy(col.gameObject);
             allowSpawn = true;
+            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Hammer");
         }
         if (col.gameObject.tag == "spikes"){
             Destroy(gameObject);
+            FMODUnity.RuntimeManager.PlayOneShot("Event:/SFX/HitSpikes");
+
         }
     }  
 }

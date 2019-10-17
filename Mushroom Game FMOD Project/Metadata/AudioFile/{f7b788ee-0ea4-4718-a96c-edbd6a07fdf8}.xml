@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{f7b788ee-0ea4-4718-a96c-edbd6a07fdf8}">
+		<property name="assetPath">
+			<value>Final SFX/Land Slimed 1.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.375</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{6b0dfc0e-ded2-43ed-8220-8ef7072dfe19}</destination>
+		</relationship>
+	</object>
+</objects>

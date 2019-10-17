@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{1db37013-a282-43ff-a24b-1b2fe3e24ba1}">
+		<property name="assetPath">
+			<value>Mushroom Placeholder sounds/Punch placeholder.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.5</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{6b0dfc0e-ded2-43ed-8220-8ef7072dfe19}</destination>
+		</relationship>
+	</object>
+</objects>
