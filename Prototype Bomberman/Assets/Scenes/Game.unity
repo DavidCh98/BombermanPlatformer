@@ -4160,6 +4160,9 @@ MonoBehaviour:
   bullet: {fileID: 1848328609203056122, guid: 56c605752d7214d60acbf79fd5c1ec30, type: 3}
   slime: {fileID: 0}
   PlayerisSlimed: 0
+  mask: {fileID: 0}
+  maskPos: {x: 0, y: 0}
+  maskSpawned: 0
 --- !u!114 &1196094309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5207,6 +5210,9 @@ MonoBehaviour:
   bullet: {fileID: 1848328609203056122, guid: 56c605752d7214d60acbf79fd5c1ec30, type: 3}
   slime: {fileID: 0}
   PlayerisSlimed: 0
+  mask: {fileID: 0}
+  maskPos: {x: 0, y: 0}
+  maskSpawned: 0
 --- !u!61 &1879035544
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5264,7 +5270,7 @@ Animator:
   m_GameObject: {fileID: 1879035540}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2ab9b31e58f749c4da01b8206d8b0843, type: 2}
+  m_Controller: {fileID: 9100000, guid: a6f9f440332bc43f992f086cabe54c96, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -5314,7 +5320,7 @@ SpriteRenderer:
   m_Sprite: {fileID: -4398183398628465896, guid: 6d6c798350735a44fb32b68daa583d87,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 0.33, y: 0.32}
