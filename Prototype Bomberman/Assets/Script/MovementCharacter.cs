@@ -30,6 +30,9 @@ public class MovementCharacter : MonoBehaviour
     private bool allowSpawn = false;
     private Vector2 playerPos;
     public bool PlayerisSlimed;
+    public Sprite mask;
+    public Vector2 maskPos;
+    public bool maskSpawned = false;
      [SerializeField] 
     #endregion 
 
@@ -152,12 +155,14 @@ public class MovementCharacter : MonoBehaviour
         {
             animator.SetBool("Punching",false);
         }
+
+
+
         //timer for power ups
         if (speed == 1 || speed == 7 || speed == 0){
             targetTime -= Time.deltaTime;
             if (targetTime <= 0)
             {
-                speed = 5;
                 targetTime = restartTargetTime;
             }
         }else if (allowSpawn == true){
@@ -190,22 +195,26 @@ public class MovementCharacter : MonoBehaviour
             
         // }
         if (col.gameObject.tag == "slime"){
+            mask = col.gameObject.GetComponent<SpriteRenderer>().sprite;
             Destroy(col.gameObject);
             speed = 1;
             FMODUnity.RuntimeManager.PlayOneShot("Event:/SFX/Slime");
         }
         if (col.gameObject.tag == "up"){
+            mask = col.gameObject.GetComponent<SpriteRenderer>().sprite;
             Destroy(col.gameObject);
             speed = 7;
             FMODUnity.RuntimeManager.PlayOneShot("Event:/SFX/SpeedUp");
         }
         if (col.gameObject.tag == "rock"){
+            mask = col.gameObject.GetComponent<SpriteRenderer>().sprite;
             Destroy(col.gameObject);
             speed = 0;
             FMODUnity.RuntimeManager.PlayOneShot("Event:/SFX/Stone");
 
         }
         if (col.gameObject.tag == "build"){
+            mask = col.gameObject.GetComponent<SpriteRenderer>().sprite;
             Destroy(col.gameObject);
             allowSpawn = true;
             FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Hammer");
