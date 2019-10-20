@@ -3862,8 +3862,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 902775519}
-  - component: {fileID: 902775518}
   - component: {fileID: 902775517}
+  - component: {fileID: 902775518}
   m_Layer: 11
   m_Name: BottomB
   m_TagString: bottom
@@ -3884,8 +3884,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collided: 0
---- !u!61 &902775518
-BoxCollider2D:
+--- !u!58 &902775518
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -3898,18 +3898,8 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.1, y: 0.01}
-  m_EdgeRadius: 0
+  m_Radius: 0.015
 --- !u!4 &902775519
 Transform:
   m_ObjectHideFlags: 0
@@ -4859,8 +4849,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1591161180}
-  - component: {fileID: 1591161182}
   - component: {fileID: 1591161181}
+  - component: {fileID: 1591161182}
   m_Layer: 11
   m_Name: BottomA
   m_TagString: bottom
@@ -4895,8 +4885,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collided: 0
---- !u!61 &1591161182
-BoxCollider2D:
+--- !u!58 &1591161182
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -4909,18 +4899,8 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.1, y: 0.01}
-  m_EdgeRadius: 0
+  m_Radius: 0.015
 --- !u!1 &1620949210
 GameObject:
   m_ObjectHideFlags: 0
