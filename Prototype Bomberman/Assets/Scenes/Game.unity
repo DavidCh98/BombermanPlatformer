@@ -4146,6 +4146,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   targetTime: 5
+  resetFlyTime: 0.175
   bulletSpeed: 10
   jumpForce: 5
   firstJump: 0
@@ -4157,8 +4158,7 @@ MonoBehaviour:
   spawnTile: 0
   tile: {fileID: 8482304392447086681, guid: f2d3baabba521cf4cabbf7b1103bb678, type: 3}
   weapon: {fileID: 4985533086732130991, guid: 06133580cae4347fd8803e104ed5389e, type: 3}
-  bullet: {fileID: 1848328609203056122, guid: 56c605752d7214d60acbf79fd5c1ec30, type: 3}
-  slime: {fileID: 0}
+  bullet: {fileID: 1848328609203056122, guid: 3fd0c7fb75fca8f42bfc0a57e2a6601b, type: 3}
   PlayerisSlimed: 0
   mask: {fileID: 0}
   maskPos: {x: 0, y: 0}
@@ -5196,6 +5196,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0.1
   targetTime: 5
+  resetFlyTime: 0.175
   bulletSpeed: 10
   jumpForce: 5
   firstJump: 0
@@ -5208,7 +5209,6 @@ MonoBehaviour:
   tile: {fileID: 8482304392447086681, guid: f2d3baabba521cf4cabbf7b1103bb678, type: 3}
   weapon: {fileID: 4985533086732130991, guid: 06133580cae4347fd8803e104ed5389e, type: 3}
   bullet: {fileID: 1848328609203056122, guid: 56c605752d7214d60acbf79fd5c1ec30, type: 3}
-  slime: {fileID: 0}
   PlayerisSlimed: 0
   mask: {fileID: 0}
   maskPos: {x: 0, y: 0}

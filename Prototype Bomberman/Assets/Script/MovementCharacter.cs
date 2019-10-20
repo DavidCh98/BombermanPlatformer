@@ -9,6 +9,7 @@ public class MovementCharacter : MonoBehaviour
     public float speed;
     public float targetTime;
     private float restartTargetTime = 5.0f;
+    public float resetFlyTime = 0.175f;
     public float bulletSpeed;
     public float jumpForce = 5f;
     Animator animator;
@@ -25,7 +26,6 @@ public class MovementCharacter : MonoBehaviour
     public GameObject tile;
     public GameObject weapon;
     public GameObject bullet;
-    public GameObject slime;
     private bool haveGun;
     private bool allowSpawn = false;
     private Vector2 playerPos;
@@ -39,9 +39,7 @@ public class MovementCharacter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
-        slime =  GameObject.FindWithTag("slime");
-
+        bullet.GetComponent<Bullet>().flyTime = resetFlyTime;
         speed = 5;
         if (this.name == "CharacterA")
         {
@@ -51,7 +49,6 @@ public class MovementCharacter : MonoBehaviour
             right = KeyCode.D;
             shoot = KeyCode.LeftShift;
             spawnTile =  KeyCode.F;
-
         } 
         else if (this.name == "CharacterB")
         {
@@ -200,18 +197,21 @@ public class MovementCharacter : MonoBehaviour
             Destroy(col.gameObject);
             speed = 1;
             FMODUnity.RuntimeManager.PlayOneShot("Event:/SFX/Slime");
+            bullet.GetComponent<Bullet>().flyTime += 0.275f;
         }
         if (col.gameObject.tag == "up"){
             mask = col.gameObject.GetComponent<SpriteRenderer>().sprite;
             Destroy(col.gameObject);
             speed = 7;
             FMODUnity.RuntimeManager.PlayOneShot("Event:/SFX/SpeedUp");
+            bullet.GetComponent<Bullet>().flyTime += 0.175f;
         }
         if (col.gameObject.tag == "rock"){
             mask = col.gameObject.GetComponent<SpriteRenderer>().sprite;
             Destroy(col.gameObject);
             speed = 0;
             FMODUnity.RuntimeManager.PlayOneShot("Event:/SFX/Stone");
+            bullet.GetComponent<Bullet>().flyTime += 0.375f;
 
         }
         if (col.gameObject.tag == "build"){
