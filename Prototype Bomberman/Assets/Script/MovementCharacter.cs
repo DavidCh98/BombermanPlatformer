@@ -219,6 +219,7 @@ public class MovementCharacter : MonoBehaviour
             Destroy(col.gameObject);
             allowSpawn = true;
             FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Hammer");
+            bullet.GetComponent<Bullet>().flyTime += 0.175f;
         }
         if (col.gameObject.tag == "spikes"){
             Destroy(gameObject);
