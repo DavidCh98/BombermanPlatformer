@@ -16,6 +16,7 @@ TagManager:
   - bullet
   - rock
   - build
+  - bottom
   layers:
   - Default
   - TransparentFX

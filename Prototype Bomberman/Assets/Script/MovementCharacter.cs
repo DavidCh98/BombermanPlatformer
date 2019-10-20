@@ -33,6 +33,7 @@ public class MovementCharacter : MonoBehaviour
     public Sprite mask;
     public Vector2 maskPos;
     public bool maskSpawned = false;
+    public GameObject bottomCollider;
      [SerializeField] 
     #endregion 
 
@@ -72,6 +73,7 @@ public class MovementCharacter : MonoBehaviour
         // Vector2 movement = Vector2.zero;
         if (Input.GetKeyDown(up) == true && firstJump == false)
         {
+            bottomCollider.GetComponent<BottomCollision>().collided = false;
             Debug.Log("Jumping");
             rigbod.velocity = new Vector2(rigbod.velocity.x, jumpForce);
             firstJump = true;
@@ -177,11 +179,15 @@ public class MovementCharacter : MonoBehaviour
     void OnCollisionEnter2D(Collision2D col) {
         if(col.gameObject.name == "Destructable" || col.gameObject.name == "TilemapGround"  || col.gameObject.name == "tile(Clone)")
         {
-            firstJump = false;
-            secondJump = false;
-            bugJump = false;
-            Debug.Log("I hit the ground");
-            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Land");
+            if (bottomCollider.GetComponent<BottomCollision>().collided == true)
+            {
+                firstJump = false;
+                secondJump = false;
+                bugJump = false;
+                Debug.Log("I hit the bottom");
+                FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Land");
+            }
+            Debug.Log("collision appears");
         }
         // if (col.gameObject.tag == "banana")
         // {
