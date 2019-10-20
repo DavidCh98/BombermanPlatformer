@@ -163,6 +163,7 @@ public class MovementCharacter : MonoBehaviour
             targetTime -= Time.deltaTime;
             if (targetTime <= 0)
             {
+                speed = 5;
                 targetTime = restartTargetTime;
             }
         }else if (allowSpawn == true){
