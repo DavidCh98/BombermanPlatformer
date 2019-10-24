@@ -4243,6 +4243,7 @@ MonoBehaviour:
   playerisslimed: 0
   playerisfast: 0
   walkingspeed: 0
+  bottomCollider: {fileID: 902775516}
 --- !u!114 &1196094310
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5292,6 +5293,7 @@ MonoBehaviour:
   playerisslimed: 0
   playerisfast: 0
   walkingspeed: 0
+  bottomCollider: {fileID: 1591161179}
 --- !u!114 &1879035542
 MonoBehaviour:
   m_ObjectHideFlags: 0
