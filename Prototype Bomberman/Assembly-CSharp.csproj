@@ -56,6 +56,7 @@
      <Compile Include="Assets\Script\AmbiancePlayer.cs" />
      <Compile Include="Assets\Script\Backup\MovementCharacterA.cs" />
      <Compile Include="Assets\Script\Backup\MovementCharacterB.cs" />
+     <Compile Include="Assets\Script\BottomCollision.cs" />
      <Compile Include="Assets\Script\Bullet.cs" />
      <Compile Include="Assets\Script\CountDown.cs" />
      <Compile Include="Assets\Script\Destructable.cs" />

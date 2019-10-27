@@ -9,6 +9,7 @@ public class MovementCharacter : MonoBehaviour
     public float speed;
     public float targetTime;
     private float restartTargetTime = 5.0f;
+    public float resetFlyTime = 0.175f;
     public float bulletSpeed;
     public float jumpForce = 5f;
     Animator animator;
@@ -25,7 +26,6 @@ public class MovementCharacter : MonoBehaviour
     public GameObject tile;
     public GameObject weapon;
     public GameObject bullet;
-    public GameObject slime;
     private bool haveGun;
     private bool allowSpawn = false;
     private Vector2 playerPos;
@@ -33,15 +33,14 @@ public class MovementCharacter : MonoBehaviour
     public Sprite mask;
     public Vector2 maskPos;
     public bool maskSpawned = false;
+    public GameObject bottomCollider;
      [SerializeField] 
     #endregion 
 
     // Start is called before the first frame update
     void Start()
     {
-
-        slime =  GameObject.FindWithTag("slime");
-
+        bullet.GetComponent<Bullet>().flyTime = resetFlyTime;
         speed = 5;
         if (this.name == "CharacterA")
         {
@@ -51,7 +50,6 @@ public class MovementCharacter : MonoBehaviour
             right = KeyCode.D;
             shoot = KeyCode.LeftShift;
             spawnTile =  KeyCode.F;
-
         } 
         else if (this.name == "CharacterB")
         {
@@ -75,6 +73,7 @@ public class MovementCharacter : MonoBehaviour
         // Vector2 movement = Vector2.zero;
         if (Input.GetKeyDown(up) == true && firstJump == false)
         {
+            bottomCollider.GetComponent<BottomCollision>().collided = false;
             Debug.Log("Jumping");
             rigbod.velocity = new Vector2(rigbod.velocity.x, jumpForce);
             firstJump = true;
@@ -163,6 +162,7 @@ public class MovementCharacter : MonoBehaviour
             targetTime -= Time.deltaTime;
             if (targetTime <= 0)
             {
+                speed = 5;
                 targetTime = restartTargetTime;
             }
         }else if (allowSpawn == true){
@@ -179,11 +179,15 @@ public class MovementCharacter : MonoBehaviour
     void OnCollisionEnter2D(Collision2D col) {
         if(col.gameObject.name == "Destructable" || col.gameObject.name == "TilemapGround"  || col.gameObject.name == "tile(Clone)")
         {
-            firstJump = false;
-            secondJump = false;
-            bugJump = false;
-            Debug.Log("I hit the ground");
-            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Land");
+            if (bottomCollider.GetComponent<BottomCollision>().collided == true)
+            {
+                firstJump = false;
+                secondJump = false;
+                bugJump = false;
+                Debug.Log("I hit the bottom");
+                FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Land");
+            }
+            Debug.Log("collision appears");
         }
         // if (col.gameObject.tag == "banana")
         // {
@@ -199,18 +203,21 @@ public class MovementCharacter : MonoBehaviour
             Destroy(col.gameObject);
             speed = 1;
             FMODUnity.RuntimeManager.PlayOneShot("Event:/SFX/Slime");
+            bullet.GetComponent<Bullet>().flyTime += 0.275f;
         }
         if (col.gameObject.tag == "up"){
             mask = col.gameObject.GetComponent<SpriteRenderer>().sprite;
             Destroy(col.gameObject);
             speed = 7;
             FMODUnity.RuntimeManager.PlayOneShot("Event:/SFX/SpeedUp");
+            bullet.GetComponent<Bullet>().flyTime += 0.175f;
         }
         if (col.gameObject.tag == "rock"){
             mask = col.gameObject.GetComponent<SpriteRenderer>().sprite;
             Destroy(col.gameObject);
             speed = 0;
             FMODUnity.RuntimeManager.PlayOneShot("Event:/SFX/Stone");
+            bullet.GetComponent<Bullet>().flyTime += 0.375f;
 
         }
         if (col.gameObject.tag == "build"){
@@ -218,6 +225,7 @@ public class MovementCharacter : MonoBehaviour
             Destroy(col.gameObject);
             allowSpawn = true;
             FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Hammer");
+            bullet.GetComponent<Bullet>().flyTime += 0.175f;
         }
         if (col.gameObject.tag == "spikes"){
             Destroy(gameObject);

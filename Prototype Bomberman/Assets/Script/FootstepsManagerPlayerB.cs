@@ -12,6 +12,7 @@ public class FootstepsManagerPlayerB : MonoBehaviour
     public bool playerisslimed;
     public bool playerisfast;
     public float walkingspeed;
+    public GameObject bottomCollider;
 
     private void FixedUpdate()
     {
@@ -53,7 +54,11 @@ public class FootstepsManagerPlayerB : MonoBehaviour
     //updates the surface, then plays a footstep event if the player is moving
     void CallFootsteps()
     {
-
+        if(bottomCollider.GetComponent<BottomCollision>().collided == true){
+            playerisgrounded = true;
+        }else{
+            playerisgrounded = false;
+        }
         if (playerismoving == true && playerisgrounded == true)
         {
             UpdateStatus();
@@ -65,6 +70,7 @@ public class FootstepsManagerPlayerB : MonoBehaviour
     //sets the footstep FMOD event path
     void Start()
     {
+        walkingspeed = 0.23f;
         playerisnormal = true;
         InvokeRepeating("CallFootsteps", 0, walkingspeed);
         FootstepsInst = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/Footsteps");
