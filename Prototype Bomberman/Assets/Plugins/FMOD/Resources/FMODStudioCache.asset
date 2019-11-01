@@ -188,6 +188,25 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 500
+--- !u!114 &-7266846596242433855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: /Users/pat/Unity Projects/Mushroom Game/Mushroom Game FMOD Project/Build/Desktop/Master.bank
+  lastModified: 637082419150000000
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 2903168
+  Exists: 1
 --- !u!114 &-7228246979846672763
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -228,6 +247,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &-7061253621319496933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Slimed
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &-7020869804552362319
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -251,6 +287,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 515
+--- !u!114 &-6724297965043488678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Normal
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &-6681949070536761056
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -289,7 +342,7 @@ MonoBehaviour:
   Path: event:/SFX/HitSpikes
   guid: 7995c89020018b45be2642a375f04883
   Banks:
-  - {fileID: -5601342744932104912}
+  - {fileID: -7266846596242433855}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -329,7 +382,7 @@ MonoBehaviour:
   Path: event:/SFX/Punch
   guid: cdb49f69f0b70e41bc58a5ecdc4958c4
   Banks:
-  - {fileID: -5601342744932104912}
+  - {fileID: -7266846596242433855}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -413,7 +466,7 @@ MonoBehaviour:
   Path: event:/SFX/Hit
   guid: c0eb0cc776dac04cba8a6f9bd39815e2
   Banks:
-  - {fileID: -5601342744932104912}
+  - {fileID: -7266846596242433855}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -579,7 +632,7 @@ MonoBehaviour:
   Path: event:/SFX/Stone
   guid: 058528a769755349ba65669012c911fe
   Banks:
-  - {fileID: -5601342744932104912}
+  - {fileID: -7266846596242433855}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -587,6 +640,25 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 625
+--- !u!114 &-3996547123837250591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: /Users/pat/Unity Projects/Mushroom Game/Mushroom Game FMOD Project/Build/Desktop/Master.strings.bank
+  lastModified: 637082419150000000
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 1466
+  Exists: 1
 --- !u!114 &-3937887752564496628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -842,6 +914,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &-650600217551542512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Fast
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &-343202306859358285
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -901,8 +990,8 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: -874685963663973644}
-  - {fileID: -5601342744932104912}
+  - {fileID: -3996547123837250591}
+  - {fileID: -7266846596242433855}
   EditorEvents:
   - {fileID: -4129095891565586973}
   - {fileID: 2075677596888838834}
@@ -921,11 +1010,28 @@ MonoBehaviour:
   - {fileID: 8950465938251702573}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -5601342744932104912}
+  - {fileID: -7266846596242433855}
   StringsBanks:
-  - {fileID: -874685963663973644}
-  stringsBankWriteTime: 637070131753607395
+  - {fileID: -3996547123837250591}
+  stringsBankWriteTime: 637082419150000000
   cacheVersion: 3
+--- !u!114 &1874152506465848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Normal
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &144172524967361296
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1049,14 +1155,14 @@ MonoBehaviour:
   Path: event:/SFX/Footsteps
   guid: 7a600bff029bae49a9043a464bb4c042
   Banks:
-  - {fileID: -5601342744932104912}
+  - {fileID: -7266846596242433855}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 2209684043865513696}
-  - {fileID: -8370717268590176070}
-  - {fileID: 6819344607639559434}
+  - {fileID: 1874152506465848}
+  - {fileID: -7061253621319496933}
+  - {fileID: 6692471154056060766}
   MinDistance: 0
   MaxDistance: 0
   Length: 140
@@ -1184,7 +1290,7 @@ MonoBehaviour:
   Path: event:/SFX/Slime
   guid: 2cae584fb9950247b9a8d9fd3ae99de9
   Banks:
-  - {fileID: -5601342744932104912}
+  - {fileID: -7266846596242433855}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1207,7 +1313,7 @@ MonoBehaviour:
   Path: event:/SFX/SpeedUp
   guid: 0e3a84c46bae7a48b1392a5ad44632b6
   Banks:
-  - {fileID: -5601342744932104912}
+  - {fileID: -7266846596242433855}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1281,7 +1387,7 @@ MonoBehaviour:
   Path: event:/SFX/Pickup
   guid: c06f85d503866348801879a0367e58ce
   Banks:
-  - {fileID: -5601342744932104912}
+  - {fileID: -7266846596242433855}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1533,7 +1639,7 @@ MonoBehaviour:
   Path: event:/SFX/Shoot
   guid: 73e915846fbd3c47bd24b9b9e53ac2ce
   Banks:
-  - {fileID: -5601342744932104912}
+  - {fileID: -7266846596242433855}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1541,6 +1647,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 304
+--- !u!114 &4692161049354384237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Slimed
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &5082512550069355930
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1579,7 +1702,7 @@ MonoBehaviour:
   Path: event:/SFX/Jump
   guid: 989a2ec60b9c4b41b5420ed728a71a57
   Banks:
-  - {fileID: -5601342744932104912}
+  - {fileID: -7266846596242433855}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1625,7 +1748,7 @@ MonoBehaviour:
   Path: event:/Music/GameplayMusic
   guid: 7e089904d9462e41a4b152171f69c32d
   Banks:
-  - {fileID: -5601342744932104912}
+  - {fileID: -7266846596242433855}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1755,6 +1878,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1000
+--- !u!114 &6692471154056060766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Fast
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &6819344607639559434
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1821,7 +1961,7 @@ MonoBehaviour:
   Path: event:/SFX/LandSlimed
   guid: c9277bc15e00ca43b9e12ccc7f34545f
   Banks:
-  - {fileID: -5601342744932104912}
+  - {fileID: -7266846596242433855}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1867,7 +2007,7 @@ MonoBehaviour:
   Path: event:/SFX/Drop
   guid: 8c7ab535f1594848941bb9f2c1f62c03
   Banks:
-  - {fileID: -5601342744932104912}
+  - {fileID: -7266846596242433855}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1913,7 +2053,7 @@ MonoBehaviour:
   Path: event:/SFX/Land
   guid: adf3fdc8e88401439172936a76c614d0
   Banks:
-  - {fileID: -5601342744932104912}
+  - {fileID: -7266846596242433855}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1936,7 +2076,7 @@ MonoBehaviour:
   Path: event:/SFX/JungleAmbiance
   guid: e5414a8171c7ee4a92934ccd1e102a93
   Banks:
-  - {fileID: -5601342744932104912}
+  - {fileID: -7266846596242433855}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
