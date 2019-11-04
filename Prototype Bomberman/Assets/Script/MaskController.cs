@@ -11,7 +11,7 @@ public class MaskController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other) 
     {
-        if(other.gameObject.tag == "slime" || other.gameObject.tag == "rock" || other.gameObject.tag == "up")
+        if(other.gameObject.tag == "slime" || other.gameObject.tag == "rock" || other.gameObject.tag == "up" || other.gameObject.tag == "build")
         {
             maskSpriteRenderer = other.gameObject.GetComponent<SpriteRenderer>();;
 
