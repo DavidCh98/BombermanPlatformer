@@ -20,8 +20,10 @@ public class MainMenu : MonoBehaviour
     }
 
     public void PlayGame(){
+        FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/UIClick");
         SceneManager.LoadScene("Game");
     }
+
     public void GoMainMenu(){
         SceneManager.LoadScene("MainMenu");
     }
@@ -31,6 +33,7 @@ public class MainMenu : MonoBehaviour
     }
     void Update () {
         if (Input.GetKeyDown(KeyCode.Escape)){
+            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/UIClick");
             if(GameIsPaused){
                 Resume();
             }else{
@@ -51,6 +54,7 @@ public class MainMenu : MonoBehaviour
         } 
     }
     public void Resume(){
+        FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/UIClick");
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;

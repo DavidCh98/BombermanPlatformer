@@ -23,6 +23,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 630
+--- !u!114 &-7600359302936463808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Fast
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &-7216005119932094239
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -218,6 +235,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 400
+--- !u!114 &-558512840939179138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/UIClick
+  guid: 76a01bb849bd71419e8f9a84344fa30c
+  Banks:
+  - {fileID: 4169674494333647024}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1000
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -250,12 +290,13 @@ MonoBehaviour:
   - {fileID: 4425190431488444105}
   - {fileID: 3831691180719435170}
   - {fileID: -7216005119932094239}
+  - {fileID: -558512840939179138}
   EditorParameters: []
   MasterBanks:
   - {fileID: 4169674494333647024}
   StringsBanks:
   - {fileID: 6376412557752918804}
-  stringsBankWriteTime: 637084746548817766
+  stringsBankWriteTime: 637085014088975334
   cacheVersion: 3
 --- !u!114 &115696682048663117
 MonoBehaviour:
@@ -386,12 +427,29 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 2931218707035792475}
-  - {fileID: -5560003323710071893}
-  - {fileID: -3390369565182172070}
+  - {fileID: 3231612200375839693}
+  - {fileID: 6512296931675454647}
+  - {fileID: -7600359302936463808}
   MinDistance: 0
   MaxDistance: 0
   Length: 140
+--- !u!114 &3231612200375839693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Normal
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &3831691180719435170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -428,11 +486,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: D:\Hanze\year2\Group stuff\Git\BombermanPLatformer\Mushroom Game FMOD Project\Build\Desktop\Master.bank
-  lastModified: 637084746548808121
+  lastModified: 637085014088965360
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 4306176
+    Value: 4329536
   Exists: 1
 --- !u!114 &4425190431488444105
 MonoBehaviour:
@@ -470,12 +528,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: D:\Hanze\year2\Group stuff\Git\BombermanPLatformer\Mushroom Game FMOD Project\Build\Desktop\Master.strings.bank
-  lastModified: 637084746548817766
+  lastModified: 637085014088975334
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1512
+    Value: 1550
   Exists: 1
+--- !u!114 &6512296931675454647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Slimed
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &8794814206086240863
 MonoBehaviour:
   m_ObjectHideFlags: 0
