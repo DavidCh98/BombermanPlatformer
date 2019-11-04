@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8974240378251606330
+--- !u!114 &-9141793199131496327
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9,31 +9,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: Fast
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &-8958939527072172662
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Normal
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
+  Path: event:/Music/GameplayMusic
+  guid: 7e089904d9462e41a4b152171f69c32d
+  Banks:
+  - {fileID: -8467841228092571511}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &-8924583282898989301
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -79,74 +68,6 @@ MonoBehaviour:
   - Name: Desktop
     Value: 1418
   Exists: 1
---- !u!114 &-8813539674961613551
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Slimed
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &-8813287562169435029
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Normal
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &-8680244204984907813
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Fast
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &-8642187980641942494
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Fast
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
 --- !u!114 &-8628624550886700801
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -170,7 +91,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 190381
---- !u!114 &-8496055993380206928
+--- !u!114 &-8467841228092571511
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -179,15 +100,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: Normal
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &-8491106281986543774
+  Path: /Users/christian/Documents/Git/Bomberman Platformer/Mushroom Game FMOD Project/Build/Desktop/Master.bank
+  lastModified: 637084620140000000
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 2903168
+  Exists: 1
+--- !u!114 &-8397519533848814868
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -196,14 +119,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: Slimed
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
+  Path: /Users/christian/Documents/Git/Bomberman Platformer/Mushroom Game FMOD Project/Build/Desktop/Master.strings.bank
+  lastModified: 637084620140000000
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 1466
+  Exists: 1
 --- !u!114 &-8370717268590176070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -221,46 +146,6 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
---- !u!114 &-8033638689517528027
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Normal
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &-7929902135328065555
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Hammer
-  guid: 4bb4b159ddc33046ba64f5c2b39018af
-  Banks:
-  - {fileID: -7266846596242433855}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1171
 --- !u!114 &-7845045030653166409
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -301,23 +186,6 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
---- !u!114 &-7762164255848289397
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Fast
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
 --- !u!114 &-7659975000867935657
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -335,29 +203,6 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
---- !u!114 &-7483506926933543389
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Shoot
-  guid: 73e915846fbd3c47bd24b9b9e53ac2ce
-  Banks:
-  - {fileID: -5861999895314508663}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 304
 --- !u!114 &-7473012550601082757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -404,110 +249,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 500
---- !u!114 &-7325309975035253526
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Normal
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &-7324455352740316994
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Fast
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &-7323265103796027003
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Normal
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &-7305716669937732745
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Slimed
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &-7298209914359866870
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Slimed
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &-7266846596242433855
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: /Users/pat/Unity Projects/Mushroom Game/Mushroom Game FMOD Project/Build/Desktop/Master.bank
-  lastModified: 637083999690000000
-  LoadResult: 0
-  FileSizes:
-  - Name: Desktop
-    Value: 4306176
-  Exists: 1
 --- !u!114 &-7228246979846672763
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -531,23 +272,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 630
---- !u!114 &-7164184770301736277
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Slimed
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
 --- !u!114 &-7151760525636707270
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -565,7 +289,7 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
---- !u!114 &-7061253621319496933
+--- !u!114 &-7106654405107597996
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -577,11 +301,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: Slimed
+  Name: Fast
   Min: 0
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &-7042600901515153014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SpeedUp
+  guid: 0e3a84c46bae7a48b1392a5ad44632b6
+  Banks:
+  - {fileID: -8467841228092571511}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 630
 --- !u!114 &-7020869804552362319
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -605,46 +352,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 515
---- !u!114 &-6950906514703751413
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Music/GameplayMusic
-  guid: 7e089904d9462e41a4b152171f69c32d
-  Banks:
-  - {fileID: -5861999895314508663}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 85714
---- !u!114 &-6724297965043488678
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Normal
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
 --- !u!114 &-6681949070536761056
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -683,7 +390,7 @@ MonoBehaviour:
   Path: event:/SFX/HitSpikes
   guid: 7995c89020018b45be2642a375f04883
   Banks:
-  - {fileID: -7266846596242433855}
+  - {fileID: 2379848164740766036}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -708,30 +415,7 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
---- !u!114 &-6293611285151376885
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Land
-  guid: adf3fdc8e88401439172936a76c614d0
-  Banks:
-  - {fileID: -5861999895314508663}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 2000
---- !u!114 &-6237005472662164527
+--- !u!114 &-6183587742666589496
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -743,7 +427,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: Slimed
+  Name: Fast
   Min: 0
   Max: 1
   Default: 0
@@ -763,7 +447,7 @@ MonoBehaviour:
   Path: event:/SFX/Punch
   guid: cdb49f69f0b70e41bc58a5ecdc4958c4
   Banks:
-  - {fileID: -7266846596242433855}
+  - {fileID: 2379848164740766036}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -794,110 +478,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1000
---- !u!114 &-6084464337900748615
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Normal
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &-6053489858371035435
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Normal
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &-5972893933233251897
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Slimed
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &-5954686076854182444
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Fast
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &-5861999895314508663
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: D:\Hanze\year2\Group stuff\Git\BombermanPLatformer\Mushroom Game FMOD Project\Build\Desktop\Master.bank
-  lastModified: 637084212566535465
-  LoadResult: 0
-  FileSizes:
-  - Name: Desktop
-    Value: 4306176
-  Exists: 1
---- !u!114 &-5765926706031791350
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Slimed
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
 --- !u!114 &-5751798077326785935
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -917,29 +497,6 @@ MonoBehaviour:
   - Name: Desktop
     Value: 1466
   Exists: 1
---- !u!114 &-5654680738993569955
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/SpeedUp
-  guid: 0e3a84c46bae7a48b1392a5ad44632b6
-  Banks:
-  - {fileID: -5861999895314508663}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 630
 --- !u!114 &-5601342744932104912
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -958,8 +515,8 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 2903168
-  Exists: 1
---- !u!114 &-5572684873705734666
+  Exists: 0
+--- !u!114 &-5459589651867733387
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -968,14 +525,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: Normal
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
+  Path: /Users/christian/Documents/Git/Bomberman Platformer/Mushroom Game FMOD Project/Build/Desktop/Master.strings.bank
+  lastModified: 637084620140000000
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 1466
+  Exists: 1
 --- !u!114 &-5354094117445541703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -991,7 +550,7 @@ MonoBehaviour:
   Path: event:/SFX/Hit
   guid: c0eb0cc776dac04cba8a6f9bd39815e2
   Banks:
-  - {fileID: -7266846596242433855}
+  - {fileID: 2379848164740766036}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1016,7 +575,7 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
---- !u!114 &-5082266872708782672
+--- !u!114 &-5064939470848130138
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1028,7 +587,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: Normal
+  Name: Slimed
   Min: 0
   Max: 1
   Default: 0
@@ -1056,86 +615,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 135
---- !u!114 &-4948304080180915836
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Hammer
-  guid: 4bb4b159ddc33046ba64f5c2b39018af
-  Banks:
-  - {fileID: -5861999895314508663}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1171
---- !u!114 &-4798053817461568230
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Fast
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &-4740400461979767427
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Slimed
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &-4738787361006280036
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/JungleAmbiance
-  guid: e5414a8171c7ee4a92934ccd1e102a93
-  Banks:
-  - {fileID: -5861999895314508663}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 190381
 --- !u!114 &-4722207078109433485
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1153,7 +632,7 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
---- !u!114 &-4647467339743700578
+--- !u!114 &-4612093124235960310
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1165,12 +644,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: Normal
+  Name: Slimed
   Min: 0
   Max: 1
   Default: 0
   Exists: 0
---- !u!114 &-4576357014406131663
+--- !u!114 &-4603433548935504855
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1179,14 +658,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: Normal
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
+  Path: event:/SFX/Hit
+  guid: c0eb0cc776dac04cba8a6f9bd39815e2
+  Banks:
+  - {fileID: -8467841228092571511}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 350
 --- !u!114 &-4566081501501532336
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1210,7 +695,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
---- !u!114 &-4535138548854085479
+--- !u!114 &-4562187491659586917
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1222,7 +707,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: Fast
+  Name: Normal
   Min: 0
   Max: 1
   Default: 0
@@ -1273,7 +758,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 500
---- !u!114 &-4334255591339221617
+--- !u!114 &-4211538622293790758
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1282,31 +767,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: Fast
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &-4242223222540449127
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Fast
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
+  Path: event:/SFX/Stone
+  guid: 058528a769755349ba65669012c911fe
+  Banks:
+  - {fileID: -8467841228092571511}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 625
 --- !u!114 &-4188303762239722238
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1324,7 +798,7 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
---- !u!114 &-4138204869844452144
+--- !u!114 &-4152103814940426233
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1356,7 +830,7 @@ MonoBehaviour:
   Path: event:/SFX/Stone
   guid: 058528a769755349ba65669012c911fe
   Banks:
-  - {fileID: -7266846596242433855}
+  - {fileID: 2379848164740766036}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1364,25 +838,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 625
---- !u!114 &-3996547123837250591
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: /Users/pat/Unity Projects/Mushroom Game/Mushroom Game FMOD Project/Build/Desktop/Master.strings.bank
-  lastModified: 637083999690000000
-  LoadResult: 0
-  FileSizes:
-  - Name: Desktop
-    Value: 1512
-  Exists: 1
 --- !u!114 &-3937887752564496628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1400,7 +855,7 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
---- !u!114 &-3821525644533785109
+--- !u!114 &-3726718167745993818
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1409,14 +864,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: Fast
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
+  Path: event:/SFX/JungleAmbiance
+  guid: e5414a8171c7ee4a92934ccd1e102a93
+  Banks:
+  - {fileID: -8467841228092571511}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 190381
 --- !u!114 &-3719244507744909643
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1451,24 +912,7 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
---- !u!114 &-3607471108940422028
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Slimed
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &-3264857242831138815
+--- !u!114 &-3696974210417429836
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1480,10 +924,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/SFX/Death
-  guid: deba0a04f743e048857908fe18b5cebe
+  Path: event:/SFX/Land
+  guid: adf3fdc8e88401439172936a76c614d0
   Banks:
-  - {fileID: -7266846596242433855}
+  - {fileID: -8467841228092571511}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1491,7 +935,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 2000
---- !u!114 &-3195117655189604448
+--- !u!114 &-3603412527368369335
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1508,7 +952,7 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
---- !u!114 &-3172837807393108210
+--- !u!114 &-3563831043207940234
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1517,14 +961,43 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: Slimed
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
+  Path: event:/SFX/Shoot
+  guid: 73e915846fbd3c47bd24b9b9e53ac2ce
+  Banks:
+  - {fileID: -8467841228092571511}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 304
+--- !u!114 &-3270619863921579746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Drop
+  guid: 8c7ab535f1594848941bb9f2c1f62c03
+  Banks:
+  - {fileID: -8467841228092571511}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 515
 --- !u!114 &-3120077160234621786
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1548,6 +1021,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 400
+--- !u!114 &-3083170621290102569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Punch
+  guid: cdb49f69f0b70e41bc58a5ecdc4958c4
+  Banks:
+  - {fileID: -8467841228092571511}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 500
 --- !u!114 &-2933416028788922122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1571,41 +1067,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 190381
---- !u!114 &-2878113735742492150
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Fast
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &-2629544438443031659
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Fast
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &-2558438566551185010
+--- !u!114 &-2568038591337117559
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1618,46 +1080,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: Normal
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &-2297660549678530515
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Death
-  guid: deba0a04f743e048857908fe18b5cebe
-  Banks:
-  - {fileID: -5861999895314508663}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 2000
---- !u!114 &-2290212799512898115
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Fast
   Min: 0
   Max: 1
   Default: 0
@@ -1705,120 +1127,6 @@ MonoBehaviour:
   MaxDistance: 0
   Length: 0
 --- !u!114 &-1930896368340156749
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Fast
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &-1515731479821971953
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Slime
-  guid: 2cae584fb9950247b9a8d9fd3ae99de9
-  Banks:
-  - {fileID: -5861999895314508663}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1000
---- !u!114 &-1443454240519602873
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Fast
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &-1341718360120874148
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Fast
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &-1257590039106072546
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Pickup
-  guid: c06f85d503866348801879a0367e58ce
-  Banks:
-  - {fileID: -5861999895314508663}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 718
---- !u!114 &-1217732150482478936
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Slimed
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &-1105037526041342015
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1916,7 +1224,7 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 1466
-  Exists: 1
+  Exists: 0
 --- !u!114 &-687959517851913396
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1934,7 +1242,7 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
---- !u!114 &-659526231666311047
+--- !u!114 &-670768329302305908
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1946,81 +1254,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: Fast
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &-650600217551542512
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Fast
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &-648909618433739278
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/LandSlimed
-  guid: c9277bc15e00ca43b9e12ccc7f34545f
-  Banks:
-  - {fileID: -5861999895314508663}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 400
---- !u!114 &-420045737218809618
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Fast
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &-343649861730528206
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Normal
+  Name: Slimed
   Min: 0
   Max: 1
   Default: 0
@@ -2071,23 +1305,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 2000
---- !u!114 &-320846936658300327
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Slimed
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2101,83 +1318,31 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 7744087420564020464}
-  - {fileID: -5861999895314508663}
+  - {fileID: -5459589651867733387}
+  - {fileID: 2379848164740766036}
   EditorEvents:
-  - {fileID: 6233882873108287595}
-  - {fileID: -5654680738993569955}
-  - {fileID: -1515731479821971953}
-  - {fileID: -4948304080180915836}
-  - {fileID: -7483506926933543389}
-  - {fileID: 6928658328818977025}
-  - {fileID: -6950906514703751413}
-  - {fileID: 5052515439017406622}
-  - {fileID: 168581119349229014}
-  - {fileID: -6293611285151376885}
-  - {fileID: -1257590039106072546}
-  - {fileID: 2545348944265695930}
-  - {fileID: -648909618433739278}
-  - {fileID: 631838469533826312}
-  - {fileID: -2297660549678530515}
-  - {fileID: -4738787361006280036}
+  - {fileID: -4129095891565586973}
+  - {fileID: 2075677596888838834}
+  - {fileID: 1890842050962993945}
+  - {fileID: 4672401218082179797}
+  - {fileID: -6624122209814526359}
+  - {fileID: 953491614106422803}
+  - {fileID: 5675198711694470609}
+  - {fileID: 8275946970440772222}
+  - {fileID: 5244779665621076326}
+  - {fileID: 8927955856111727844}
+  - {fileID: 3409785620620769553}
+  - {fileID: -5354094117445541703}
+  - {fileID: 8218735148696817225}
+  - {fileID: -6148593802542893307}
+  - {fileID: 8950465938251702573}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -5861999895314508663}
+  - {fileID: 2379848164740766036}
   StringsBanks:
-  - {fileID: 7744087420564020464}
-  stringsBankWriteTime: 637084212566577495
+  - {fileID: -5459589651867733387}
+  stringsBankWriteTime: 637084620140000000
   cacheVersion: 3
---- !u!114 &1874152506465848
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Normal
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &94587487820789943
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Slimed
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &129258484439267806
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Slimed
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
 --- !u!114 &144172524967361296
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2201,46 +1366,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1000
---- !u!114 &156388761824174240
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Fast
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &168581119349229014
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Jump
-  guid: 989a2ec60b9c4b41b5420ed728a71a57
-  Banks:
-  - {fileID: -5861999895314508663}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 135
 --- !u!114 &247013052905876124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2258,7 +1383,7 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
---- !u!114 &299362752850615666
+--- !u!114 &490493717565609208
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2270,12 +1395,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: Normal
+  Name: Slimed
   Min: 0
   Max: 1
   Default: 0
   Exists: 0
---- !u!114 &631838469533826312
+--- !u!114 &558665794499306709
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2284,20 +1409,35 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/SFX/Punch
-  guid: cdb49f69f0b70e41bc58a5ecdc4958c4
-  Banks:
-  - {fileID: -5861999895314508663}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 500
+  Path: /Users/pat/Unity Projects/Mushroom Game/Mushroom Game FMOD Project/Build/Desktop/Master.bank
+  lastModified: 637070976300000000
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 2903168
+  Exists: 1
+--- !u!114 &578095995185203759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: /Users/christian/Documents/Git/Bomberman Platformer/Mushroom Game FMOD Project/Build/Desktop/Master.strings.bank
+  lastModified: 637084620140000000
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 1466
+  Exists: 1
 --- !u!114 &729794221759723310
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2381,34 +1521,17 @@ MonoBehaviour:
   Path: event:/SFX/Footsteps
   guid: 7a600bff029bae49a9043a464bb4c042
   Banks:
-  - {fileID: -7266846596242433855}
+  - {fileID: 2379848164740766036}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: -2558438566551185010}
-  - {fileID: 94587487820789943}
-  - {fileID: 3044991725837884559}
+  - {fileID: -2568038591337117559}
+  - {fileID: 490493717565609208}
+  - {fileID: 1739489209960123325}
   MinDistance: 0
   MaxDistance: 0
   Length: 140
---- !u!114 &1010756987157275770
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Slimed
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
 --- !u!114 &1157226743767416016
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2478,6 +1601,68 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 135
+--- !u!114 &1588222732442847897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: /Users/christian/Documents/Git/Bomberman Platformer/Mushroom Game FMOD Project/Build/Desktop/Master.strings.bank
+  lastModified: 637084620140000000
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 1466
+  Exists: 1
+--- !u!114 &1593250647334177627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Footsteps
+  guid: 7a600bff029bae49a9043a464bb4c042
+  Banks:
+  - {fileID: -8467841228092571511}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 4924519451676611697}
+  - {fileID: -4612093124235960310}
+  - {fileID: -4152103814940426233}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 140
+--- !u!114 &1739489209960123325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Fast
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &1764447305918308938
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2533,7 +1718,7 @@ MonoBehaviour:
   Path: event:/SFX/Slime
   guid: 2cae584fb9950247b9a8d9fd3ae99de9
   Banks:
-  - {fileID: -7266846596242433855}
+  - {fileID: 2379848164740766036}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2541,40 +1726,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1000
---- !u!114 &2004508411528196668
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Fast
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &2059173048879651929
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Slimed
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
 --- !u!114 &2075677596888838834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2590,7 +1741,7 @@ MonoBehaviour:
   Path: event:/SFX/SpeedUp
   guid: 0e3a84c46bae7a48b1392a5ad44632b6
   Banks:
-  - {fileID: -7266846596242433855}
+  - {fileID: 2379848164740766036}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2599,23 +1750,6 @@ MonoBehaviour:
   MaxDistance: 0
   Length: 630
 --- !u!114 &2209684043865513696
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Normal
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &2230492062986205109
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2649,7 +1783,7 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
---- !u!114 &2424050767472200340
+--- !u!114 &2379848164740766036
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2658,15 +1792,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: Normal
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &2545348944265695930
+  Path: /Users/christian/Documents/Git/Bomberman Platformer/Mushroom Game FMOD Project/Build/Desktop/Master.bank
+  lastModified: 637084620140000000
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 2903168
+  Exists: 1
+--- !u!114 &2506073631323646850
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2675,54 +1811,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/SFX/Hit
-  guid: c0eb0cc776dac04cba8a6f9bd39815e2
-  Banks:
-  - {fileID: -5861999895314508663}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 350
---- !u!114 &2639098132746941710
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Normal
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &2656470720290037436
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Fast
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
+  Path: /Users/christian/Documents/Git/Bomberman Platformer/Mushroom Game FMOD Project/Build/Desktop/Master.bank
+  lastModified: 637084620140000000
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 2903168
+  Exists: 1
 --- !u!114 &2662699140005760139
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2740,7 +1838,30 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
---- !u!114 &2667122832057801618
+--- !u!114 &2781838853527102102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Slime
+  guid: 2cae584fb9950247b9a8d9fd3ae99de9
+  Banks:
+  - {fileID: -8467841228092571511}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1000
+--- !u!114 &3242422930839829563
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2753,74 +1874,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: Slimed
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &2924981478070033067
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Normal
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &3010092286706886744
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Normal
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &3044991725837884559
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Fast
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &3198713201574773665
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Normal
   Min: 0
   Max: 1
   Default: 0
@@ -2840,7 +1893,7 @@ MonoBehaviour:
   Path: event:/SFX/Pickup
   guid: c06f85d503866348801879a0367e58ce
   Banks:
-  - {fileID: -7266846596242433855}
+  - {fileID: 2379848164740766036}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2848,57 +1901,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 718
---- !u!114 &3495288990614762282
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Normal
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &3512944638946079080
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Normal
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &3558967526722178325
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Fast
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
 --- !u!114 &3672626333052749085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2945,23 +1947,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 2000
---- !u!114 &3937389771588761355
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Fast
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
 --- !u!114 &3948181034774436582
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3053,7 +2038,7 @@ MonoBehaviour:
   - Name: Desktop
     Value: 1466
   Exists: 1
---- !u!114 &3991554378611534730
+--- !u!114 &4113007948342775712
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3062,31 +2047,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: Slimed
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &4262086277707661490
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Slimed
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
+  Path: event:/SFX/HitSpikes
+  guid: 7995c89020018b45be2642a375f04883
+  Banks:
+  - {fileID: -8467841228092571511}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 350
 --- !u!114 &4281146067161938916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3110,40 +2084,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 350
---- !u!114 &4361927576576960001
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Normal
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &4377641531754841527
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Fast
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
 --- !u!114 &4456940963457741910
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3190,23 +2130,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 625
---- !u!114 &4479169086239093648
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Slimed
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
 --- !u!114 &4507575603640957412
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3230,23 +2153,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 304
---- !u!114 &4549486866105830916
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Slimed
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
 --- !u!114 &4672401218082179797
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3262,7 +2168,7 @@ MonoBehaviour:
   Path: event:/SFX/Shoot
   guid: 73e915846fbd3c47bd24b9b9e53ac2ce
   Banks:
-  - {fileID: -7266846596242433855}
+  - {fileID: 2379848164740766036}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3270,24 +2176,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 304
---- !u!114 &4692161049354384237
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Slimed
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &4709557162387519788
+--- !u!114 &4924519451676611697
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3304,58 +2193,7 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
---- !u!114 &4809485012963016046
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Normal
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &4887374479373781931
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Slimed
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &4939635160266962875
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Slimed
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &5052515439017406622
+--- !u!114 &5003609927508551578
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3367,17 +2205,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/SFX/Drop
-  guid: 8c7ab535f1594848941bb9f2c1f62c03
+  Path: event:/SFX/Pickup
+  guid: c06f85d503866348801879a0367e58ce
   Banks:
-  - {fileID: -5861999895314508663}
+  - {fileID: -8467841228092571511}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 515
+  Length: 718
 --- !u!114 &5082512550069355930
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3401,23 +2239,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 500
---- !u!114 &5141576456728584829
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Slimed
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
 --- !u!114 &5244779665621076326
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3433,7 +2254,7 @@ MonoBehaviour:
   Path: event:/SFX/Jump
   guid: 989a2ec60b9c4b41b5420ed728a71a57
   Banks:
-  - {fileID: -7266846596242433855}
+  - {fileID: 2379848164740766036}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3441,7 +2262,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 135
---- !u!114 &5285796434764755073
+--- !u!114 &5338811862988498194
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3453,7 +2274,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: Normal
+  Name: Fast
   Min: 0
   Max: 1
   Default: 0
@@ -3481,23 +2302,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 630
---- !u!114 &5643558155551822157
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Slimed
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
 --- !u!114 &5675198711694470609
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3513,14 +2317,14 @@ MonoBehaviour:
   Path: event:/Music/GameplayMusic
   guid: 7e089904d9462e41a4b152171f69c32d
   Banks:
-  - {fileID: -7266846596242433855}
-  IsStream: 1
+  - {fileID: 2379848164740766036}
+  IsStream: 0
   Is3D: 0
-  IsOneShot: 0
+  IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 85714
+  Length: 0
 --- !u!114 &5857034199904088686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3534,23 +2338,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: Normal
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &5902003191884829371
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Slimed
   Min: 0
   Max: 1
   Default: 0
@@ -3578,23 +2365,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
---- !u!114 &6108890203945824431
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Slimed
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
 --- !u!114 &6109568380098846507
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3612,46 +2382,6 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
---- !u!114 &6191217261075508389
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Fast
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &6233882873108287595
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Stone
-  guid: 058528a769755349ba65669012c911fe
-  Banks:
-  - {fileID: -5861999895314508663}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 625
 --- !u!114 &6350611408791702531
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3717,7 +2447,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1000
---- !u!114 &6692471154056060766
+--- !u!114 &6730492834306128505
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3726,31 +2456,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: Fast
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &6803342915008834039
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Normal
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
+  Path: /Users/pat/Unity Projects/Mushroom Game/Mushroom Game FMOD Project/Build/Desktop/Master.strings.bank
+  lastModified: 637070970670000000
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 1466
+  Exists: 1
 --- !u!114 &6819344607639559434
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3768,7 +2483,7 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
---- !u!114 &6928658328818977025
+--- !u!114 &7125675715771109634
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3780,105 +2495,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/SFX/Footsteps
-  guid: 7a600bff029bae49a9043a464bb4c042
+  Path: event:/SFX/LandSlimed
+  guid: c9277bc15e00ca43b9e12ccc7f34545f
   Banks:
-  - {fileID: -5861999895314508663}
+  - {fileID: -8467841228092571511}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
-  Parameters:
-  - {fileID: 2639098132746941710}
-  - {fileID: -7305716669937732745}
-  - {fileID: -8642187980641942494}
+  Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 140
---- !u!114 &6929951609248817619
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Slimed
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &6935597384329631270
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Normal
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &7009959361837846131
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Slimed
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &7034105558756537259
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Slimed
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &7122346426922766646
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Fast
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
+  Length: 400
 --- !u!114 &7508201299642472403
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3896,7 +2523,7 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
---- !u!114 &7532241457164323779
+--- !u!114 &7654260327884260442
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3908,12 +2535,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: Slimed
+  Name: Normal
   Min: 0
   Max: 1
   Default: 0
   Exists: 0
---- !u!114 &7744087420564020464
+--- !u!114 &7696884698906154507
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3925,12 +2552,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: D:\Hanze\year2\Group stuff\Git\BombermanPLatformer\Mushroom Game FMOD Project\Build\Desktop\Master.strings.bank
-  lastModified: 637084212566577495
+  Path: /Users/christian/Documents/Git/Bomberman Platformer/Mushroom Game FMOD Project/Build/Desktop/Master.bank
+  lastModified: 637084620140000000
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1512
+    Value: 2903168
   Exists: 1
 --- !u!114 &7911490055808041176
 MonoBehaviour:
@@ -3949,7 +2576,7 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
---- !u!114 &8212662040269884846
+--- !u!114 &8174742622262462083
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3958,14 +2585,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: Normal
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
+  Path: event:/SFX/Jump
+  guid: 989a2ec60b9c4b41b5420ed728a71a57
+  Banks:
+  - {fileID: -8467841228092571511}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 135
 --- !u!114 &8218735148696817225
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3981,7 +2614,7 @@ MonoBehaviour:
   Path: event:/SFX/LandSlimed
   guid: c9277bc15e00ca43b9e12ccc7f34545f
   Banks:
-  - {fileID: -7266846596242433855}
+  - {fileID: 2379848164740766036}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -4027,7 +2660,7 @@ MonoBehaviour:
   Path: event:/SFX/Drop
   guid: 8c7ab535f1594848941bb9f2c1f62c03
   Banks:
-  - {fileID: -7266846596242433855}
+  - {fileID: 2379848164740766036}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -4035,108 +2668,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 515
---- !u!114 &8315522674192817590
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Fast
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &8371280186940362391
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Fast
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &8535493923827430013
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Slimed
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &8572055507646906547
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Fast
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &8612125990831984896
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Normal
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &8641092986923454463
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Fast
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
 --- !u!114 &8782393913782679425
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4160,23 +2691,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 500
---- !u!114 &8822022528718155341
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: Normal
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
 --- !u!114 &8927955856111727844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4192,7 +2706,7 @@ MonoBehaviour:
   Path: event:/SFX/Land
   guid: adf3fdc8e88401439172936a76c614d0
   Banks:
-  - {fileID: -7266846596242433855}
+  - {fileID: 2379848164740766036}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -4215,7 +2729,7 @@ MonoBehaviour:
   Path: event:/SFX/JungleAmbiance
   guid: e5414a8171c7ee4a92934ccd1e102a93
   Banks:
-  - {fileID: -7266846596242433855}
+  - {fileID: 2379848164740766036}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0

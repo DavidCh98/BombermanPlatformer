@@ -5,7 +5,6 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     public GameObject bullet;
-    public GameObject destroyEffect;
     [SerializeField]
     public float flyTime;
     // Start is called before the first frame update
@@ -25,7 +24,7 @@ public class Bullet : MonoBehaviour
         }
     }
     private void OnCollisionEnter2D(Collision2D other) {
-        Instantiate(destroyEffect,transform.position, Quaternion.identity);
+        
         Destroy(gameObject);
         if (other.gameObject.tag == "Player")
         {
