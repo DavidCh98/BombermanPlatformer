@@ -23,6 +23,14 @@ public class MainMenu : MonoBehaviour
         FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/UIClick");
         SceneManager.LoadScene("Game");
     }
+    public void PlayGameFirst(){
+        FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/UIClick");
+        SceneManager.LoadScene("Controls");
+    }
+     public void ShowControls(){
+        FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/UIClick");
+        SceneManager.LoadScene("ControlsShowOnly");
+    }
 
     public void GoMainMenu(){
         SceneManager.LoadScene("MainMenu");
