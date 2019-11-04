@@ -175,7 +175,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.6431373, g: 0.59607846, b: 1, a: 0}
+  m_BackGroundColor: {r: 0.20056395, g: 0.04645782, b: 0.33962262, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -3942,7 +3942,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.015
+  m_Radius: 0.03157956
 --- !u!4 &902775519
 Transform:
   m_ObjectHideFlags: 0
@@ -4425,7 +4425,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1196094307}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 20.018, y: -6.405, z: 0}
+  m_LocalPosition: {x: 18.84, y: 7.64, z: 0}
   m_LocalScale: {x: 0.665, y: 0.67, z: 1}
   m_Children:
   - {fileID: 902775519}
@@ -4910,7 +4910,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1591161179}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.031, y: -0.548, z: 0}
+  m_LocalPosition: {x: -0.0386, y: -0.5398, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1879035548}
@@ -4944,7 +4944,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.015
+  m_Radius: 0.03157956
 --- !u!1 &1620949210
 GameObject:
   m_ObjectHideFlags: 0
@@ -5507,7 +5507,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1879035540}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -14.98, y: -6.55, z: 0}
+  m_LocalPosition: {x: -14.01, y: 7.48, z: 0}
   m_LocalScale: {x: 0.665, y: 0.67, z: 1}
   m_Children:
   - {fileID: 1591161180}
