@@ -164,6 +164,8 @@ public class MovementCharacter : MonoBehaviour
             {
                 speed = 5;
                 targetTime = restartTargetTime;
+                MaskController maskController = this.GetComponent<MaskController>();
+                maskController.maskObjSpriteRender.sprite = null;
             }
         }else if (allowSpawn == true){
             targetTime -= Time.deltaTime;
