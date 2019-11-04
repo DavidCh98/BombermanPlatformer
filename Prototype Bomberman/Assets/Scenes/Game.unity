@@ -176,7 +176,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.6431373, g: 0.59607846, b: 1, a: 0}
+  m_BackGroundColor: {r: 0.2292118, g: 0.021626905, b: 0.509434, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -4087,7 +4087,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.015
+  m_Radius: 0.04
 --- !u!4 &902775519
 Transform:
   m_ObjectHideFlags: 0
@@ -5127,7 +5127,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.015
+  m_Radius: 0.04
 --- !u!1 &1620949210
 GameObject:
   m_ObjectHideFlags: 0
