@@ -96,7 +96,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 1848328609203056122}
-  flyTime: 0.175
+  destroyEffect: {fileID: 234294515787905403, guid: ff6b92be6f7f1c34bacd69555d6bbfcd,
+    type: 3}
+  flyTime: 1.075
 --- !u!61 &-3194204594686899785
 BoxCollider2D:
   m_ObjectHideFlags: 0
