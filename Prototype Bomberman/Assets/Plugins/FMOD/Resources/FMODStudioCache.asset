@@ -875,7 +875,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: D:\Hanze\year2\Group stuff\Git\BombermanPLatformer\Mushroom Game FMOD Project\Build\Desktop\Master.bank
-  lastModified: 637084212566535465
+  lastModified: 637084733949416922
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -1079,6 +1079,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1171
+--- !u!114 &-4904944668214777657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Slimed
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &-4798053817461568230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2125,7 +2142,7 @@ MonoBehaviour:
   - {fileID: -5861999895314508663}
   StringsBanks:
   - {fileID: 7744087420564020464}
-  stringsBankWriteTime: 637084212566577495
+  stringsBankWriteTime: 637084733949436570
   cacheVersion: 3
 --- !u!114 &1874152506465848
 MonoBehaviour:
@@ -3788,9 +3805,9 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 2639098132746941710}
-  - {fileID: -7305716669937732745}
-  - {fileID: -8642187980641942494}
+  - {fileID: 8922786660552387183}
+  - {fileID: -4904944668214777657}
+  - {fileID: 8509511784780877573}
   MinDistance: 0
   MaxDistance: 0
   Length: 140
@@ -3926,7 +3943,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: D:\Hanze\year2\Group stuff\Git\BombermanPLatformer\Mushroom Game FMOD Project\Build\Desktop\Master.strings.bank
-  lastModified: 637084212566577495
+  lastModified: 637084733949436570
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -4069,6 +4086,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &8509511784780877573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Fast
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &8535493923827430013
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4161,6 +4195,23 @@ MonoBehaviour:
   MaxDistance: 0
   Length: 500
 --- !u!114 &8822022528718155341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Normal
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &8922786660552387183
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
