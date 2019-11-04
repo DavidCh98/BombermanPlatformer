@@ -48,6 +48,7 @@ public class LifeController : MonoBehaviour
                 break;
             case 0:
                 hearts[hearts.Length-3].gameObject.SetActive(false);
+                FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Death");
                 Destroy(player);
                 break;
         }
