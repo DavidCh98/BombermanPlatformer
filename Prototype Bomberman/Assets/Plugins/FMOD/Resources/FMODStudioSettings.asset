@@ -15,12 +15,12 @@ MonoBehaviour:
   SwitchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: D:\Hanze\year2\Group stuff\Git\BombermanPLatformer\Mushroom Game
-    FMOD Project\Mushroom Game FMOD Project.fspro
-  SourceProjectPathUnformatted: D:\Hanze\year2\Group stuff\Git\BombermanPLatformer\Mushroom
-    Game FMOD Project\Mushroom Game FMOD Project.fspro
-  SourceBankPathUnformatted: D:\Hanze\year2\Group stuff\Git\BombermanPLatformer\Mushroom
-    Game FMOD Project\Build
+  sourceProjectPath: /Users/pat/Unity Projects/Mushroom Game/Mushroom Game FMOD Project/Mushroom
+    Game FMOD Project.fspro
+  SourceProjectPathUnformatted: /Users/pat/Unity Projects/Mushroom Game/Mushroom Game
+    FMOD Project/Mushroom Game FMOD Project.fspro
+  SourceBankPathUnformatted: /Users/pat/Unity Projects/Mushroom Game/Mushroom Game
+    FMOD Project/Build
   AutomaticEventLoading: 1
   BankLoadType: 0
   AutomaticSampleLoading: 0

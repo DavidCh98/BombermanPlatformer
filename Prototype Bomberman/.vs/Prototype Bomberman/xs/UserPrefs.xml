@@ -1,8 +1,10 @@
 ﻿<Properties StartupConfiguration="{B6557E31-86E6-9C65-0DE4-F3E776F0CC10}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/MusicPlayer.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/AmbiancePlayer.cs">
     <Files>
       <File FileName="Assets/Script/AmbiancePlayer.cs" Line="6" Column="1" />
-      <File FileName="Assets/Script/MusicPlayer.cs" Line="20" Column="6" />
+      <File FileName="Assets/Script/MusicPlayer.cs" />
+      <File FileName="Assets/Script/FootstepsManagerPlayerA.cs" Line="49" Column="10" />
+      <File FileName="Assets/Script/FootstepsManagerPlayerB.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -10,7 +12,7 @@
           <Node name="Prototype Bomberman" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Script" expanded="True">
-                <Node name="MusicPlayer.cs" selected="True" />
+                <Node name="AmbiancePlayer.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -20,7 +22,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="fc66709d-f423-432c-8797-20db26e4659f" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="b47f051a-543f-4976-b05d-0fdcda09142d" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

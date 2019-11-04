@@ -32,12 +32,14 @@ public class FootstepsManagerPlayerA : MonoBehaviour
         if (playerisnormal == true)
 
         {
+            walkingspeed = 0.23f;
             FootstepsInst.setParameterByName("Normal", 1f, false);
             FootstepsInst.setParameterByName("Slimed", 0f, false);
             FootstepsInst.setParameterByName("Fast", 0f, false);
         }
         else if (playerisslimed == true)
         {
+            walkingspeed = 0.6f;
             FootstepsInst.setParameterByName("Normal", 0f, false);
             FootstepsInst.setParameterByName("Slimed", 1f, false);
             FootstepsInst.setParameterByName("Fast", 0f, false);
@@ -45,6 +47,7 @@ public class FootstepsManagerPlayerA : MonoBehaviour
         else if (playerisfast == true)
 
         {
+            walkingspeed = 0.12f;
             FootstepsInst.setParameterByName("Normal", 0f, false);
             FootstepsInst.setParameterByName("Slimed", 0f, false);
             FootstepsInst.setParameterByName("Fast", 1f, false);
