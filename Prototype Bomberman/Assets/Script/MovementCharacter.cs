@@ -231,7 +231,7 @@ public class MovementCharacter : MonoBehaviour
         }
         if (col.gameObject.tag == "spikes"){
             Destroy(gameObject);
-            FMODUnity.RuntimeManager.PlayOneShot("Event:/SFX/HitSpikes");
+            FMODUnity.RuntimeManager.PlayOneShot("Event:/SFX/Death");
 
         }
     }  
