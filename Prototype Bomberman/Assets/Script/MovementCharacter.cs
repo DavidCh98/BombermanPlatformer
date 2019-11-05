@@ -48,8 +48,8 @@ public class MovementCharacter : MonoBehaviour
             up = KeyCode.W;
             left = KeyCode.A;
             right = KeyCode.D;
-            shoot = KeyCode.LeftShift;
-            spawnTile =  KeyCode.F;
+            shoot = KeyCode.LeftControl;
+            spawnTile = KeyCode.LeftShift;
         } 
         else if (this.name == "CharacterB")
         {
@@ -57,8 +57,8 @@ public class MovementCharacter : MonoBehaviour
             up = KeyCode.UpArrow;
             left = KeyCode.LeftArrow;
             right = KeyCode.RightArrow;
-            shoot = KeyCode.RightShift;
-            spawnTile =  KeyCode.Keypad0;
+            shoot = KeyCode.RightControl;
+            spawnTile = KeyCode.RightShift;
         }
         sR = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
@@ -130,7 +130,7 @@ public class MovementCharacter : MonoBehaviour
             }  
         }
 
-        if (Input.GetKeyDown(shoot) == true)
+        if (Input.GetKeyDown(shoot) == true && !Input.GetKeyDown(KeyCode.RightAlt))
         {
             animator.SetBool("Punching",true);
             FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Shoot");
@@ -164,6 +164,8 @@ public class MovementCharacter : MonoBehaviour
             {
                 speed = 5;
                 targetTime = restartTargetTime;
+                MaskController maskController = this.GetComponent<MaskController>();
+                maskController.maskObjSpriteRender.sprite = null;
             }
         }else if (allowSpawn == true){
             targetTime -= Time.deltaTime;
@@ -171,6 +173,8 @@ public class MovementCharacter : MonoBehaviour
             {
                 allowSpawn = false;
                 targetTime = restartTargetTime;
+                MaskController maskController = this.GetComponent<MaskController>();
+                maskController.maskObjSpriteRender.sprite = null;
             }
         }
        
@@ -229,7 +233,7 @@ public class MovementCharacter : MonoBehaviour
         }
         if (col.gameObject.tag == "spikes"){
             Destroy(gameObject);
-            FMODUnity.RuntimeManager.PlayOneShot("Event:/SFX/Death");
+            FMODUnity.RuntimeManager.PlayOneShot("Event:/SFX/HitSpikes");
 
         }
     }  

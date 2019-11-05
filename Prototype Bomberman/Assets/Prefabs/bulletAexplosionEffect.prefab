@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6376684591547344204}
   - component: {fileID: 6299172613615102189}
   m_Layer: 0
-  m_Name: Particle System
+  m_Name: bulletAexplosionEffect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 234294515787905403}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.0766063, y: -6.2565217, z: -79.56835}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

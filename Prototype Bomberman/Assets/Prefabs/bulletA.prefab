@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1848328609203056122}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.1031227, y: 0.015266836, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -98,7 +98,7 @@ MonoBehaviour:
   bullet: {fileID: 1848328609203056122}
   destroyEffect: {fileID: 234294515787905403, guid: ff6b92be6f7f1c34bacd69555d6bbfcd,
     type: 3}
-  flyTime: 1.075
+  flyTime: 0.175
 --- !u!61 &-3194204594686899785
 BoxCollider2D:
   m_ObjectHideFlags: 0
