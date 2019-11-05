@@ -117,14 +117,14 @@ public class MovementCharacter : MonoBehaviour
             Transform shotPointTransform = this.GetComponentInChildren<Transform>();
             if(sR.flipX == true)
             {
-                Vector2 shotPoint = new Vector2(Mathf.Round(shotPointTransform.position.x)-0.5f, Mathf.Round(shotPointTransform.position.y)+0.5f); 
+                Vector2 shotPoint = new Vector2(Mathf.Round(shotPointTransform.position.x)-1.5f, Mathf.Round(shotPointTransform.position.y)+0.5f); 
                 Instantiate(tile, shotPoint,Quaternion.Euler(0, 180, 0));
                 Debug.Log("spawnTile180");
                 
             } 
             else if(sR.flipX == false)
             {
-                Vector2 shotPoint = new Vector2(Mathf.Round(shotPointTransform.position.x)+0.5f, Mathf.Round(shotPointTransform.position.y)+0.5f); 
+                Vector2 shotPoint = new Vector2(Mathf.Round(shotPointTransform.position.x)+1.5f, Mathf.Round(shotPointTransform.position.y)+0.5f); 
                 Instantiate(tile, shotPoint, Quaternion.identity); 
                 Debug.Log("spawnTileNormal");
             }  
