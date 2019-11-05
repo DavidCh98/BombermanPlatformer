@@ -255,7 +255,8 @@ MonoBehaviour:
   smoothTime: 0.5
   minZoom: 95
   maxZoom: 10
-  zoomLimiter: 30
+  zoomLimiter: 10
+  greatestDistance: 0
 --- !u!1 &30105960
 GameObject:
   m_ObjectHideFlags: 0

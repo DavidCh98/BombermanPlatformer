@@ -11,13 +11,18 @@ public class CameraController : MonoBehaviour
     public float minZoom = 40f;
     public float maxZoom = 10f;
     public float zoomLimiter = 30f;
+    public float greatestDistance;
     private Vector3 velocity;
     private Camera cam;
+    private GameObject player1;
+    private GameObject player2;
 
 
 
     void Start()
     {
+        player1 = GameObject.Find("CharacterA");
+        player2 = GameObject.Find("CharacterB");
         cam = GetComponent<Camera>();
     }
     void LateUpdate() 
@@ -40,19 +45,15 @@ public class CameraController : MonoBehaviour
 
     void Zoom()
     {
+  
         float newZoom = Mathf.Lerp(maxZoom, minZoom, GetGreatestDistance()/zoomLimiter);
         cam.fieldOfView = Mathf.Lerp(cam.fieldOfView, newZoom, Time.deltaTime);
     }
 
     float GetGreatestDistance()
     {
-        var bounds = new Bounds(targets[0].position, Vector3.zero);
-
-        for (int i = 0; i < targets.Count; i++)
-        {
-            bounds.Encapsulate(targets[i].position);
-        }
-        return bounds.size.x;   
+        float dist = Vector3.Distance(player1.transform.position,player2.transform.position); 
+        return dist;
     }
 
     Vector3 GetCenterPoint()
