@@ -11,8 +11,8 @@ public class CameraController : MonoBehaviour
     public float minZoom = 40f;
     public float maxZoom = 10f;
     public float zoomLimiter = 30f;
-    private Vector3 velocity;
-    private Camera cam;
+    public Vector3 velocity;
+    public Camera cam;
 
 
 
@@ -52,7 +52,8 @@ public class CameraController : MonoBehaviour
         {
             bounds.Encapsulate(targets[i].position);
         }
-        return bounds.size.x;   
+
+        return bounds.size.x;
     }
 
     Vector3 GetCenterPoint()

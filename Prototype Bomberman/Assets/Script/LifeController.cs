@@ -17,13 +17,10 @@ public class LifeController : MonoBehaviour
         if (this.name == "CharacterA")
         {
             player = GameObject.Find("CharacterA");
-           
-
         } 
         else if (this.name == "CharacterB")
         {
             player = GameObject.Find("CharacterB");
-            
         }
         lives = 3;
         if (this.name == "CharacterA")
