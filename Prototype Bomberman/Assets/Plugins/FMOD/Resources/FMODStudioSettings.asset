@@ -15,12 +15,12 @@ MonoBehaviour:
   SwitchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: /Users/christian/Documents/Git/Bomberman Plattformer/Mushroom
-    Game FMOD Project/Mushroom Game FMOD Project.fspro
-  SourceProjectPathUnformatted: /Users/christian/Documents/Git/Bomberman Plattformer/Mushroom
-    Game FMOD Project/Mushroom Game FMOD Project.fspro
-  SourceBankPathUnformatted: /Users/christian/Documents/Git/Bomberman Plattformer/Mushroom
-    Game FMOD Project/Build
+  sourceProjectPath: C:\Users\David\Desktop\Fungus Fights\Mushroom Game FMOD Project\Mushroom
+    Game FMOD Project.fspro
+  SourceProjectPathUnformatted: C:\Users\David\Desktop\Fungus Fights\Mushroom Game
+    FMOD Project\Mushroom Game FMOD Project.fspro
+  SourceBankPathUnformatted: C:\Users\David\Desktop\Fungus Fights\Mushroom Game FMOD
+    Project\Build
   AutomaticEventLoading: 1
   BankLoadType: 0
   AutomaticSampleLoading: 0

@@ -18,6 +18,7 @@ TagManager:
   - build
   - bottom
   - ground
+  - sideColliders
   layers:
   - Default
   - TransparentFX

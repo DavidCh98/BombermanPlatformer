@@ -34,7 +34,8 @@ public class MovementCharacter : MonoBehaviour
     public Vector2 maskPos;
     public bool maskSpawned = false;
     public GameObject bottomCollider;
-     [SerializeField] 
+    public GameObject FootstepsManagerPlayer;
+    [SerializeField] 
     #endregion 
 
     // Start is called before the first frame update
@@ -48,8 +49,8 @@ public class MovementCharacter : MonoBehaviour
             up = KeyCode.W;
             left = KeyCode.A;
             right = KeyCode.D;
-            shoot = KeyCode.LeftControl;
-            spawnTile = KeyCode.LeftShift;
+            shoot = KeyCode.LeftShift;
+            spawnTile = KeyCode.LeftControl;
         } 
         else if (this.name == "CharacterB")
         {
@@ -115,18 +116,34 @@ public class MovementCharacter : MonoBehaviour
         }
         if (Input.GetKeyDown(spawnTile) == true && allowSpawn == true){
             Transform shotPointTransform = this.GetComponentInChildren<Transform>();
+            Debug.Log(this.GetComponentInChildren<Transform>().name);
             if(sR.flipX == true)
             {
-                Vector2 shotPoint = new Vector2(Mathf.Round(shotPointTransform.position.x)-1.5f, Mathf.Round(shotPointTransform.position.y)+0.5f); 
-                Instantiate(tile, shotPoint,Quaternion.Euler(0, 180, 0));
-                Debug.Log("spawnTile180");
+                if (this.name == "CharacterA")
+                {
+                    Vector2 shotPoint = new Vector2(Mathf.Round(shotPointTransform.position.x)-1.5f, Mathf.Round(shotPointTransform.position.y)+0.5f);
+                    Instantiate(tile, shotPoint,Quaternion.Euler(0, 180, 0)); 
+                } else if (this.name == "CharacterB")
+                {
+                    Vector2 shotPoint = new Vector2(Mathf.Round(shotPointTransform.position.x)-1.5f, Mathf.Round(shotPointTransform.position.y)-0.5f); 
+                    Instantiate(tile, shotPoint,Quaternion.Euler(0, 180, 0));
+                }
+                
+        
                 
             } 
             else if(sR.flipX == false)
             {
-                Vector2 shotPoint = new Vector2(Mathf.Round(shotPointTransform.position.x)+1.5f, Mathf.Round(shotPointTransform.position.y)+0.5f); 
-                Instantiate(tile, shotPoint, Quaternion.identity); 
-                Debug.Log("spawnTileNormal");
+                if (this.name == "CharacterA")
+                {
+                    Vector2 shotPoint = new Vector2(Mathf.Round(shotPointTransform.position.x)+1.5f, Mathf.Round(shotPointTransform.position.y)+0.5f);
+                    Instantiate(tile, shotPoint,Quaternion.Euler(0, 180, 0)); 
+                } else if (this.name == "CharacterB")
+                {
+                    Vector2 shotPoint = new Vector2(Mathf.Round(shotPointTransform.position.x)+1.5f, Mathf.Round(shotPointTransform.position.y)-0.5f); 
+                    Instantiate(tile, shotPoint,Quaternion.Euler(0, 180, 0));
+                }
+                
             }  
         }
 
@@ -166,6 +183,9 @@ public class MovementCharacter : MonoBehaviour
                 targetTime = restartTargetTime;
                 MaskController maskController = this.GetComponent<MaskController>();
                 maskController.maskObjSpriteRender.sprite = null;
+                FootstepsManagerPlayer.GetComponent<FootstepsManagerPlayer>().playerisslimed = false;
+                FootstepsManagerPlayer.GetComponent<FootstepsManagerPlayer>().playerisfast = false;
+
             }
         }else if (allowSpawn == true){
             targetTime -= Time.deltaTime;
@@ -177,7 +197,6 @@ public class MovementCharacter : MonoBehaviour
                 maskController.maskObjSpriteRender.sprite = null;
             }
         }
-       
     }
 
     void OnCollisionEnter2D(Collision2D col) {
@@ -208,6 +227,7 @@ public class MovementCharacter : MonoBehaviour
             speed = 1;
             FMODUnity.RuntimeManager.PlayOneShot("Event:/SFX/Slime");
             bullet.GetComponent<Bullet>().flyTime += 0.275f;
+            FootstepsManagerPlayer.GetComponent<FootstepsManagerPlayer>().playerisslimed = true;
         }
         if (col.gameObject.tag == "up"){
             mask = col.gameObject.GetComponent<SpriteRenderer>().sprite;
@@ -215,6 +235,7 @@ public class MovementCharacter : MonoBehaviour
             speed = 7;
             FMODUnity.RuntimeManager.PlayOneShot("Event:/SFX/SpeedUp");
             bullet.GetComponent<Bullet>().flyTime += 0.175f;
+            FootstepsManagerPlayer.GetComponent<FootstepsManagerPlayer>().playerisfast = true;
         }
         if (col.gameObject.tag == "rock"){
             mask = col.gameObject.GetComponent<SpriteRenderer>().sprite;

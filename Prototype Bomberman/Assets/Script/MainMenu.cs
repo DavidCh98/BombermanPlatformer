@@ -10,13 +10,13 @@ public class MainMenu : MonoBehaviour
     public GameObject playAgainUI;
     public GameObject player1;
     public GameObject player2;
-    public Text winText;
+    public GameObject Winplayer1;
+    public GameObject Winplayer2;
 
         private void Start() 
     {
         player1 = GameObject.Find("CharacterA");
         player2 = GameObject.Find("CharacterB");
-        winText.text = "";
     }
 
     public void PlayGame(){
@@ -50,13 +50,13 @@ public class MainMenu : MonoBehaviour
         }
           if (player1 == null) 
         { 
-            winText.text = "Player 2 won!";
+            Winplayer2.GetComponent<Image>().enabled = true;
             playAgainUI.SetActive(true);
             Time.timeScale = 0f;
         }
         else if (player2 == null) 
         { 
-            winText.text = "Player 1 won!";
+            Winplayer1.GetComponent<Image>().enabled = true;
             playAgainUI.SetActive(true);
             Time.timeScale = 0f;
         } 

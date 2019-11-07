@@ -11,7 +11,7 @@ public class BottomCollision : MonoBehaviour
         
     }
 
-    // Update is called once per frame
+    // Update is called once per framed
     void Update()
     {
         
